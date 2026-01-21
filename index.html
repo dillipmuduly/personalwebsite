@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. Dillip Kumar Muduly, Professor & Head of Surgical Oncology at AIIMS Bhubaneswar. Expert care in breast, GI, and other cancers at Dr Muduly’s Cancer Care." />
+  <meta name="keywords" content="surgical oncologist Bhubaneswar, breast cancer Odisha, GI cancer surgery, cancer awareness Odisha, Dr Dillip Muduly" />
+  <meta name="robots" content="index, follow" />
+  <title>Dr. Dillip Kumar Muduly | Surgical Oncologist | Dr Muduly’s Cancer Care</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #094440;
+      --secondary: #f97316;
+      --accent: #6366f1;
+      --bg: #f8fafc;
+      --text: #0f172a;
+      --text-light: #64748b;
+      --card-bg: #ffffff;
+      --border-soft: rgba(148, 163, 184, 0.25);
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius-lg: 20px;
+      --radius-sm: 12px;
+      --radius-pill: 999px;
+      --nav-height: 80px;
+      --transition: all 0.3s ease;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Navigation */
+    header { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); background: rgba(248, 250, 252, 0.95); border-bottom: 1px solid var(--border-soft); }
+    .nav { height: var(--nav-height); display: flex; align-items: center; justify-content: space-between; }
+    .nav-left { display: flex; align-items: center; gap: 1rem; }
+    .logo-img{
+  height: 72px;          /* bigger logo */
+  width: auto;
+  border-radius: 14px;
+  background: #fff;
+  padding: 8px;          /* a bit more breathing space */
+  box-shadow: var(--shadow-soft);
+  object-fit: contain;   /* keeps logo intact */
+} 
+    .nav-links { display: flex; gap: 2rem; font-weight: 500; font-size: 0.95rem; }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-links .cta { background: var(--primary); color: #fff; padding: 0.65rem 1.4rem; border-radius: var(--radius-pill); transition: var(--transition); }
+    .nav-links .cta:hover { background: var(--primary-dark); transform: translateY(-2px); }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .nav-toggle span { width: 28px; height: 3px; background: var(--text); border-radius: 3px; transition: var(--transition); }
+
+    /* Hero */
+    .hero { padding: 5rem 0 4rem; background: linear-gradient(to bottom, #e0f2fe, #f0fdfa); }
+    .hero-inner { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3rem; align-items: center; }
+    .hero h1 { font-family: 'Poppins', sans-serif; font-size: clamp(2.4rem, 5vw, 3.4rem); line-height: 1.2; margin-bottom: 1.2rem; }
+    .hero h1 span { background: linear-gradient(120deg, var(--primary), var(--accent)); -webkit-background-clip: text; color: transparent; }
+    .hero-subtitle { font-size: 1.15rem; margin: 1.5rem 0; color: var(--text-light); max-width: 600px; }
+    .btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1.8rem; border-radius: var(--radius-pill); font-weight: 600; transition: var(--transition); }
+    .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 12px 30px rgba(15, 118, 110, 0.25); }
+    .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(15, 118, 110, 0.35); }
+    .btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
+    .btn-outline:hover { background: var(--primary); color: #fff; }
+
+    /* Sections */
+    section { padding: 4rem 0; }
+    .section-title { font-family: 'Poppins', sans-serif; font-size: 2.4rem; text-align: center; margin-bottom: 1rem; }
+    .section-subtitle { text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--text-light); font-size: 1.1rem; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .card { background: var(--card-bg); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-soft); border: 1px solid var(--border-soft); transition: var(--transition); }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12); }
+
+    /* Vertical Timeline - Interactive */
+    .timeline { position: relative; max-width: 900px; margin: 0 auto; }
+    .timeline::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background: linear-gradient(to bottom, var(--primary), var(--accent)); border-radius: 4px; transform: translateX(-50%); }
+    .timeline-item { position: relative; width: 50%; padding: 1.5rem; margin-bottom: 3rem; }
+    .timeline-item:nth-child(odd) { left: 0; text-align: right; padding-right: 5rem; }
+    .timeline-item:nth-child(even) { left: 50%; padding-left: 5rem; }
+    .timeline-dot { position: absolute; width: 22px; height: 22px; background: #fff; border: 5px solid var(--primary); border-radius: 50%; top: 2rem; box-shadow: 0 0 0 6px rgba(15,118,110,0.15); transition: var(--transition); }
+    .timeline-item:nth-child(odd) .timeline-dot { right: -11px; }
+    .timeline-item:nth-child(even) .timeline-dot { left: -11px; }
+    .timeline-content { background: var(--card-bg); border-radius: var(--radius-lg); padding: 1.8rem; box-shadow: var(--shadow-soft); transition: var(--transition); cursor: pointer; }
+    .timeline-content:hover { transform: scale(1.05) translateY(-10px); box-shadow: 0 25px 50px rgba(15,23,42,0.2); z-index: 10; }
+    .timeline-content:hover .timeline-dot { transform: scale(1.3); background: var(--primary); }
+    .timeline-year { font-weight: 700; color: var(--primary); font-size: 1.2rem; margin-bottom: 0.5rem; }
+
+    /* Gallery Carousel with Arrows */
+    .gallery-container { position: relative; }
+    .gallery-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(15,118,110,0.8); color: #fff; border: none; width: 50px; height: 50px; border-radius: 50%; font-size: 2rem; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+    .gallery-arrow:hover { background: var(--primary); transform: translateY(-50%) scale(1.1); }
+    .gallery-arrow.left { left: 10px; }
+    .gallery-arrow.right { right: 10px; }
+    .gallery-scroll { overflow-x: hidden; scroll-behavior: smooth; }
+    .gallery-images { display: flex; gap: 2rem; padding: 1rem 0; }
+    .gallery-item { min-width: 320px; cursor: pointer; }
+    .gallery-item img { height: 300px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); transition: var(--transition); }
+    .gallery-item img:hover { transform: scale(1.05); }
+    .gallery-caption { text-align: center; margin-top: 1rem; font-weight: 600; }
+
+    /* Modal for Gallery */
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); align-items: center; justify-content: center; z-index: 200; flex-direction: column; }
+    .modal-content { max-width: 90%; max-height: 90%; text-align: center; color: #fff; }
+    .modal-content img { max-width: 100%; max-height: 70vh; border-radius: var(--radius-lg); }
+    .modal-caption { margin-top: 1.5rem; font-size: 1.2rem; max-width: 800px; }
+    .close-modal { position: absolute; top: 20px; right: 30px; font-size: 3rem; color: #fff; cursor: pointer; }
+
+    /* Patient Stories */
+    .story-card { text-align: center; font-style: italic; }
+    .story-quote { font-size: 1.1rem; margin: 1.5rem 0; color: var(--text-light); }
+    .story-note { font-size: 0.85rem; color: var(--text-light); margin-top: 1rem; }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 992px) {
+      .hero-inner, .grid-2 { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .hero-inner > div:last-child { order: -1; text-align: center; margin-bottom: 2rem; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { position: fixed; top: var(--nav-height); left: 0; right: 0; background: #fff; flex-direction: column; padding: 2rem; align-items: center; box-shadow: var(--shadow-soft); transform: translateY(-100%); opacity: 0; visibility: hidden; transition: var(--transition); }
+      .nav-links.open { transform: translateY(0); opacity: 1; visibility: visible; }
+      .nav-toggle { display: flex; }
+      .hero { text-align: center; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .gallery-arrow { width: 40px; height: 40px; font-size: 1.5rem; }
+      .timeline::before { left: 24px; }
+      .timeline-item { width: 100%; left: 0 !important; padding-left: 5.5rem; padding-right: 1rem; text-align: left !important; margin-bottom: 3rem; }
+      .timeline-item .timeline-dot { left: 13px !important; }
+      .timeline-item:nth-child(odd) { padding-right: 1rem; }
+    }
+
+    /* Fade-in */
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+/* Hero Slider Add-on */
+.hero-slider-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+}
+
+.hero-slides {
+  position: relative;
+  min-height: 520px; /* keeps height stable across slides */
+}
+
+/* Fade logic: all slides overlap, only active is visible */
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 650ms ease;
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.hero-cta-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.hero-img-col {
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  object-fit: cover;
+}
+
+/* Arrows */
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--border-soft);
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-soft);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 5;
+  transition: var(--transition);
+}
+
+.hero-arrow:hover {
+  transform: translateY(-50%) scale(1.06);
+  background: #fff;
+}
+
+.hero-arrow-left { left: -10px; }
+.hero-arrow-right { right: -10px; }
+
+/* Dots */
+.hero-dots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1.6rem;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  background: rgba(15, 23, 42, 0.25);
+  transition: var(--transition);
+}
+
+.hero-dot.is-active {
+  width: 28px;
+  background: linear-gradient(120deg, var(--primary), var(--accent));
+}
+
+/* Mobile tweaks */
+@media (max-width: 992px) {
+  .hero-slides { min-height: 720px; }
+  .hero-arrow-left { left: 6px; }
+  .hero-arrow-right { right: 6px; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide { transition: none; }
+  .hero-arrow { transition: none; }
+  .hero-dot { transition: none; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Navigation -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-left">
+            <img src="assets/logo-dmcc.png" alt="Dr Muduly’s Cancer Care Logo" class="logo-img" />
+          </div>
+          <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#journey">Journey</a>
+            <a href="#education">Patient Education</a>
+            <a href="#research">Research Profile</a>
+	    <a href="#collab">Collaborations</a>
+            <a href="#media">Awareness & Media</a>
+            <a href="#stories">Patient Stories</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact" class="cta">Book Appointment</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+<!-- Hero Slider (Fade) -->
+<section class="hero fade-in hero-slider" id="home" aria-label="Hero highlights">
+  <div class="container">
+    <div class="hero-slider-wrap" id="heroSlider" tabindex="0">
+
+      <!-- Arrows -->
+      <button class="hero-arrow hero-arrow-left" type="button" aria-label="Previous slide" onclick="heroPrev()">‹</button>
+      <button class="hero-arrow hero-arrow-right" type="button" aria-label="Next slide" onclick="heroNext()">›</button>
+
+      <!-- Slides -->
+      <div class="hero-slides" id="heroSlides">
+
+        <!-- Slide 1 -->
+        <article class="hero-slide is-active" data-index="0">
+          <div class="hero-inner">
+            <div>
+              <h1>
+                Transforming Fear into Fortitude<br>
+                <span>Patient-First Surgical Oncology</span>
+              </h1>
+              <p class="hero-subtitle">
+                Driven by the 3C’s of Care: Competence, Commitment, Compassion<br><br>
+                Professor &amp; Head, Surgical Oncology, AIIMS Bhubaneswar<br>
+                23+ years experience | Specialist in Breast &amp; GI Oncology
+              </p>
+              <div class="hero-cta-row">
+                <a href="#contact" class="btn btn-primary">Book Appointment</a>
+                <a href="https://www.researchgate.net/profile/Dillip-Muduly" target="_blank" class="btn btn-outline">View Publications (170+)</a>
+              </div>
+            </div>
+            <div class="hero-img-col">
+              <img src="assets/dr-muduly-hero-portrait.jpg" alt="Dr. Dillip Kumar Muduly - portrait" class="hero-img">
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="hero-slide" data-index="1">
+          <div class="hero-inner">
+            <div>
+              <h1>
+                Precision in Every Cut<br>
+                <span>Advanced Surgical Oncology Expertise</span>
+              </h1>
+              <p class="hero-subtitle">
+                Breast conservation surgery, gastric cancer resections, minimally invasive and organ-preserving oncologic procedures guided by evidence and compassion.
+              </p>
+              <div class="hero-cta-row">
+                <a href="#contact" class="btn btn-primary">Book Appointment</a>
+                <a href="#journey" class="btn btn-outline">View Journey</a>
+              </div>
+            </div>
+            <div class="hero-img-col">
+              <img src="assets/dr-muduly-hero-surgical-expertise.jpg" alt="Surgical oncology expertise" class="hero-img">
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="hero-slide" data-index="2">
+          <div class="hero-inner">
+            <div>
+              <h1>
+                Where Practice Meets Research<br>
+                <span>170+ Peer-Reviewed Publications</span>
+              </h1>
+              <p class="hero-subtitle">
+                Contributing to global oncology literature and shaping evidence from Eastern India for real-world guidelines and practice.
+              </p>
+              <div class="hero-cta-row">
+                <a href="#research" class="btn btn-primary">Research Profile</a>
+                <a href="https://scholar.google.com/scholar?q=author:%22Dillip+Kumar+Muduly%22+OR+author:%22DK+Muduly%22" target="_blank" class="btn btn-outline">Google Scholar</a>
+              </div>
+            </div>
+            <div class="hero-img-col">
+              <img src="assets/dr-muduly-hero-academic-research.jpg" alt="Academic and research leadership" class="hero-img">
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 4 -->
+        <article class="hero-slide" data-index="3">
+          <div class="hero-inner">
+            <div>
+              <h1>
+                Building Cancer Care for Odisha<br>
+                <span>From Awareness to Access</span>
+              </h1>
+              <p class="hero-subtitle">
+                Focused on early detection, timely diagnosis, and equitable access to quality cancer care across Odisha.
+              </p>
+              <div class="hero-cta-row">
+                <a href="#media" class="btn btn-primary">Awareness &amp; Media</a>
+                <a href="#collab" class="btn btn-outline">Collaborations</a>
+              </div>
+            </div>
+            <div class="hero-img-col">
+              <img src="assets/dr-muduly-hero-odisha-mission.jpg" alt="Odisha cancer mission and outreach" class="hero-img">
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 5 -->
+        <article class="hero-slide" data-index="4">
+          <div class="hero-inner">
+            <div>
+              <h1>
+                Every Patient is a Person<br>
+                <span>Not Just a Case Number</span>
+              </h1>
+              <p class="hero-subtitle">
+                Transparent counselling, shared decision-making, and emotional support through every stage of the cancer journey.
+              </p>
+              <div class="hero-cta-row">
+                <a href="#contact" class="btn btn-primary">Book Appointment</a>
+                <a href="#stories" class="btn btn-outline">Patient Stories</a>
+              </div>
+            </div>
+            <div class="hero-img-col">
+              <img src="assets/dr-muduly-hero-patient-care.jpg" alt="Patient counselling and care" class="hero-img">
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 6 -->
+        <article class="hero-slide" data-index="5">
+          <div class="hero-inner">
+            <div>
+              <h1>
+                Dr Muduly’s Cancer Care<br>
+                <span>Evidence-Based. Ethical. Accessible.</span>
+              </h1>
+              <p class="hero-subtitle">
+                Private consultations focused on time, trust, clarity, and personalised treatment planning.
+              </p>
+              <div class="hero-cta-row">
+                <a href="#contact" class="btn btn-primary">Book Appointment</a>
+                <a href="#contact" class="btn btn-outline">Clinic Details</a>
+              </div>
+            </div>
+            <div class="hero-img-col">
+              <img src="assets/dr-muduly-hero-clinic-vision.jpg" alt="Clinic vision and private practice" class="hero-img">
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 7 -->
+        <article class="hero-slide" data-index="6">
+          <div class="hero-inner">
+            <div>
+              <h1>
+                Transforming Cancer Care in Eastern India<br>
+                <span>Through Care, Research &amp; Innovation</span>
+              </h1>
+              <p class="hero-subtitle">
+                Integrating clinical excellence, digital oncology, and collaborative research to build future-ready cancer care.
+              </p>
+              <div class="hero-cta-row">
+                <a href="#collab" class="btn btn-primary">Collaborations</a>
+                <a href="#journey" class="btn btn-outline">Professional Journey</a>
+              </div>
+            </div>
+            <div class="hero-img-col">
+              <img src="assets/dr-muduly-hero-future-vision.jpg" alt="Future vision for cancer care" class="hero-img">
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Dots -->
+      <div class="hero-dots" role="tablist" aria-label="Hero slide selector" id="heroDots">
+        <button type="button" class="hero-dot is-active" aria-label="Slide 1" onclick="heroGoTo(0)"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 2" onclick="heroGoTo(1)"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 3" onclick="heroGoTo(2)"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 4" onclick="heroGoTo(3)"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 5" onclick="heroGoTo(4)"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 6" onclick="heroGoTo(5)"></button>
+        <button type="button" class="hero-dot" aria-label="Slide 7" onclick="heroGoTo(6)"></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Professional Journey -->
+    <section id="journey" style="background:#f0fdfa;">
+      <div class="container fade-in">
+        <h2 class="section-title">Professional Journey</h2>
+        <p class="section-subtitle">Key milestones in clinical practice, academics, and leadership in surgical oncology.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">1998–2004</div>
+              <h3>MBBS</h3>
+              <p>MKCG Medical College, Berhampur, Odisha<br>Built strong clinical foundation serving diverse patients in Eastern India.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">2006–2012</div>
+              <h3>MS (General Surgery) & MCh (Surgical Oncology)</h3>
+              <p>AIIMS New Delhi<br>Advanced training in complex oncologic surgeries and multidisciplinary tumour boards.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">2012–2023</div>
+              <h3>Faculty & Clinical Practice</h3>
+              <p>11 years at AIIMS New Delhi followed by faculty at AIIMS Bhubaneswar<br>High-volume surgical oncology practice and resident mentorship.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">2023–Present</div>
+              <h3>Professor & Head</h3>
+              <p>Department of Surgical Oncology, AIIMS Bhubaneswar<br>Leadership in department building, guideline development, and state cancer initiatives.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">Ongoing</div>
+              <h3>Dr Muduly’s Cancer Care</h3>
+              <p>Private practice focused on patient-centric, evidence-based oncology in Odisha<br>Integrating digital tools (EBO database) and awareness programs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient Education Resources -->
+    <section id="education" style="background:#ffffff;">
+      <div class="container fade-in">
+        <h2 class="section-title">Patient Education Resources</h2>
+        <p class="section-subtitle">Empowering patients with reliable information on cancer prevention, early detection, and living with cancer.</p>
+        <div class="grid-3">
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3.5rem; margin-bottom:1rem;">🔍</div>
+            <h3>Early Detection</h3>
+            <p>Warning signs of common cancers and importance of regular screening.</p>
+            <a href="#" class="btn btn-outline" style="margin-top:1rem;">Read More →</a>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3.5rem; margin-bottom:1rem;">🥗</div>
+            <h3>Prevention & Lifestyle</h3>
+            <p>Tobacco cessation, diet, exercise, and vaccinations to reduce risk.</p>
+            <a href="#" class="btn btn-outline" style="margin-top:1rem;">Read More →</a>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3.5rem; margin-bottom:1rem;">❤️</div>
+            <h3>Support During Treatment</h3>
+            <p>Managing side effects, nutrition, emotional health, and survivorship.</p>
+            <a href="#" class="btn btn-outline" style="margin-top:1rem;">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Profile -->
+    <section id="research" style="background:#f0fdfa;">
+      <div class="container fade-in">
+        <h2 class="section-title">Research Profile</h2>
+        <p class="section-subtitle">170+ peer-reviewed publications focusing on breast conservation, gastric cancer outcomes, and regional data from Eastern India.</p>
+        <div class="card" style="text-align:center; max-width:800px; margin:0 auto;">
+          <p style="margin-bottom:1rem;">Primary research profile (regularly updated):</p>
+          <div class="profile-links" style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content:center;">
+            <a href="https://www.researchgate.net/profile/Dillip-Muduly" target="_blank" class="btn btn-primary">
+              ResearchGate (170+ Publications)
+            </a>
+            <a href="https://scholar.google.com/scholar?q=author:%22Dillip+Kumar+Muduly%22+OR+author:%22DK+Muduly%22" target="_blank" class="btn btn-outline">
+              Search on Google Scholar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Collaborative Research Projects -->
+<section id="collab" style="background:#ffffff;">
+  <div class="container fade-in">
+    <h2 class="section-title">Collaborative Research Projects</h2>
+    <p class="section-subtitle">
+      Ongoing and planned collaborations with leading institutes in basic science, engineering, and translational oncology.
+      Click an institute to view the project/study details.
+    </p>
+
+    <div class="card" style="text-align:center; max-width:900px; margin:0 auto;">
+      <p style="margin-bottom:1rem;">Select an institute:</p>
+
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; margin-top:1.2rem;">
+        <a href="collaborations/ils.html" class="btn btn-primary">Institute of Life Sciences (ILS), Bhubaneswar</a>
+        <a href="collaborations/niser.html" class="btn btn-outline">NISER, Bhubaneswar</a>
+        <a href="collaborations/iiser.html" class="btn btn-outline">IISER, Bhubaneswar</a>
+        <a href="collaborations/iiit.html" class="btn btn-outline">IIIT, Bhubaneswar</a>
+        <a href="collaborations/birmingham.html" class="btn btn-outline">University of Birmingham, UK</a>
+      </div>
+
+      <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--text-light);">
+        (You can add more institutes anytime by adding one more button + creating the matching HTML file.)
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- Cancer Awareness & Media -->
+    <section id="media" style="background:#ffffff;">
+      <div class="container fade-in">
+        <h2 class="section-title">Cancer Awareness & Media</h2>
+        <p class="section-subtitle">Educational talks, interviews, and public initiatives (content added regularly).</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <div class="card">
+            <div style="background:#e2e8f0; height:250px; border-radius:var(--radius-sm); display:flex; align-items:center; justify-content:center; color:var(--text-light);">
+              Placeholder for Video
+            </div>
+            <h4 style="margin-top:1rem;">Breast Cancer Awareness</h4>
+          </div>
+          <div class="card">
+            <div style="background:#e2e8f0; height:250px; border-radius:var(--radius-sm); display:flex; align-items:center; justify-content:center; color:var(--text-light);">
+              Placeholder for Video
+            </div>
+            <h4 style="margin-top:1rem;">Early Detection & Prevention</h4>
+          </div>
+          <div class="card">
+            <p style="text-align:center; padding:4rem 0; color:var(--text-light);">More content coming soon...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient Stories (Anonymized - Ethical) -->
+    <section id="stories" style="background:#f0fdfa;">
+      <div class="container fade-in">
+        <h2 class="section-title">Patient Stories (Anonymized)</h2>
+        <p class="section-subtitle">Educational, anonymized examples highlighting care approach and outcomes (fully compliant with ethics).</p>
+        <div class="grid-3">
+          <div class="card story-card">
+            <p class="story-quote">"The compassionate approach and clear explanation helped me face treatment with confidence."</p>
+            <p class="story-note">— Anonymized breast cancer patient</p>
+          </div>
+          <div class="card story-card">
+            <p class="story-quote">"Organ preservation surgery gave me hope for normal life after diagnosis."</p>
+            <p class="story-note">— Anonymized GI cancer patient</p>
+          </div>
+          <div class="card story-card">
+            <p class="story-quote">"Multidisciplinary care and support made the journey less frightening."</p>
+            <p class="story-note">— Anonymized patient family member</p>
+          </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem; font-size:0.9rem; color:var(--text-light);">
+          <strong>Note:</strong> Direct testimonials prohibited by NMC guidelines. These are anonymized educational examples.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" style="background:#ffffff;">
+      <div class="container fade-in">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">Moments from cancer awareness programs, academic conferences, screening camps, and professional activities in Odisha.</p>
+        <div class="gallery-container">
+          <button class="gallery-arrow left" onclick="scrollGallery(-400)">←</button>
+          <div class="gallery-scroll" id="galleryScroll">
+            <div class="gallery-images">
+              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Cancer+Awareness+Camp', 'Cancer Awareness Camp - Community education session on early detection')">
+                <img src="https://via.placeholder.com/500x320?text=Cancer+Awareness+Camp" alt="Cancer Awareness Camp">
+                <p class="gallery-caption">Cancer Awareness Camp</p>
+              </div>
+              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Conference', 'National Conference - Invited talk on breast conservation')">
+                <img src="https://via.placeholder.com/500x320?text=Conference" alt="Conference">
+                <p class="gallery-caption">Conference Presentation</p>
+              </div>
+              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Screening', 'Free Screening Program - Breast & cervical cancer screening')">
+                <img src="https://via.placeholder.com/500x320?text=Screening+Program" alt="Screening Program">
+                <p class="gallery-caption">Screening Program</p>
+              </div>
+              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Academic', 'Academic Session with residents')">
+                <img src="https://via.placeholder.com/500x320?text=Academic+Session" alt="Academic Session">
+                <p class="gallery-caption">Academic Session</p>
+              </div>
+              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Team', 'Team AIIMS Bhubaneswar')">
+                <img src="https://via.placeholder.com/500x320?text=Team+Photo" alt="Team Photo">
+                <p class="gallery-caption">Team Photo</p>
+              </div>
+            </div>
+          </div>
+          <button class="gallery-arrow right" onclick="scrollGallery(400)">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="background:#f0fdfa;">
+      <div class="container fade-in">
+        <h2 class="section-title">Book an Appointment</h2>
+        <p class="section-subtitle">Private practice consultations by prior appointment only.</p>
+        <div class="grid-2">
+          <div class="card">
+            <h3 style="margin-bottom:1.5rem;">Clinic Details</h3>
+            <p><strong>Address:</strong> [Your Private Clinic Address, Bhubaneswar]</p>
+            <p style="margin:1rem 0;"><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Message Now</a></p>
+            <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--text-light);">
+              For AIIMS Bhubaneswar OPD, please use the official hospital portal.
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom:1.5rem;">Appointment Request</h3>
+            <form id="appointmentForm" action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="POST">
+              <div style="margin-bottom:1.2rem;">
+                <label>Full Name *</label>
+                <input type="text" name="name" required style="width:100%; padding:0.9rem; border-radius:var(--radius-sm); border:1px solid var(--border-soft);" />
+              </div>
+              <div style="margin-bottom:1.2rem;">
+                <label>Mobile Number *</label>
+                <input type="tel" name="phone" required style="width:100%; padding:0.9rem; border-radius:var(--radius-sm); border:1px solid var(--border-soft);" />
+              </div>
+              <div style="margin-bottom:1.2rem;">
+                <label>Reason for Consultation *</label>
+                <select name="reason" required style="width:100%; padding:0.9rem; border-radius:var(--radius-sm); border:1px solid var(--border-soft);">
+                  <option value="">Select</option>
+                  <option>Breast Cancer/Concern</option>
+                  <option>GI/Hepatobiliary Cancer</option>
+                  <option>Second Opinion</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div style="margin-bottom:1.2rem;">
+                <label>Brief Message</label>
+                <textarea name="message" rows="4" style="width:100%; padding:0.9rem; border-radius:var(--radius-sm); border:1px solid var(--border-soft);"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© <span id="year"></span> Dr. Dillip Kumar Muduly. All rights reserved.</p>
+        <p style="margin-top:0.8rem; font-style:italic;">मा कश्चित् दुःखमाप्नुयात् | May no one suffer</p>
+      </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="modal">
+      <span class="close-modal" onclick="closeModal()">×</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="">
+        <p id="modalCaption" class="modal-caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleNav() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+
+    function scrollGallery(amount) {
+      document.getElementById("galleryScroll").scrollBy({ left: amount, behavior: 'smooth' });
+    }
+
+    function openModal(src, caption) {
+      document.getElementById("galleryModal").style.display = "flex";
+      document.getElementById("modalImage").src = src;
+      document.getElementById("modalCaption").textContent = caption;
+    }
+
+    function closeModal() {
+      document.getElementById("galleryModal").style.display = "none";
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Hero Slider (Fade)
+  let heroIndex = 0;
+  let heroTimer = null;
+  const HERO_INTERVAL_MS = 7000;
+
+  function heroEls() {
+    const slidesWrap = document.getElementById('heroSlides');
+    const dotsWrap = document.getElementById('heroDots');
+    if (!slidesWrap || !dotsWrap) return null;
+    return {
+      slides: Array.from(slidesWrap.querySelectorAll('.hero-slide')),
+      dots: Array.from(dotsWrap.querySelectorAll('.hero-dot')),
+      slider: document.getElementById('heroSlider')
+    };
+  }
+
+  function heroSetActive(newIndex) {
+    const els = heroEls();
+    if (!els) return;
+
+    const total = els.slides.length;
+    heroIndex = (newIndex + total) % total;
+
+    els.slides.forEach((s, i) => s.classList.toggle('is-active', i === heroIndex));
+    els.dots.forEach((d, i) => d.classList.toggle('is-active', i === heroIndex));
+  }
+
+  function heroNext() {
+    heroSetActive(heroIndex + 1);
+    heroResetTimer();
+  }
+
+  function heroPrev() {
+    heroSetActive(heroIndex - 1);
+    heroResetTimer();
+  }
+
+  function heroGoTo(i) {
+    heroSetActive(i);
+    heroResetTimer();
+  }
+
+  function heroStartTimer() {
+    // Don't auto-animate if user prefers reduced motion
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    heroStopTimer();
+    heroTimer = setInterval(() => heroSetActive(heroIndex + 1), HERO_INTERVAL_MS);
+  }
+
+  function heroStopTimer() {
+    if (heroTimer) clearInterval(heroTimer);
+    heroTimer = null;
+  }
+
+  function heroResetTimer() {
+    heroStartTimer();
+  }
+
+  // Init
+  (function heroInit() {
+    const els = heroEls();
+    if (!els) return;
+
+    heroSetActive(0);
+    heroStartTimer();
+
+    // Pause on hover
+    els.slider.addEventListener('mouseenter', heroStopTimer);
+    els.slider.addEventListener('mouseleave', heroStartTimer);
+
+    // Keyboard support
+    els.slider.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') heroPrev();
+      if (e.key === 'ArrowRight') heroNext();
+    });
+  })();
+
+  </script>
+</body>
+</html>
