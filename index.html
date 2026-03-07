@@ -1,851 +1,1307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dr. Dillip Kumar Muduly, Former-Professor & Head of Surgical Oncology at AIIMS Bhubaneswar. Expert care in Breast, GI, Gynaecologic, Thoracic, and other cancers at Dr Muduly’s Cancer Care." />
-  <meta name="keywords" content="best surgical oncologist Bhubaneswar Odisha, breast cancer Surgery Odisha, GI cancer surgery, Gynaecologic Cancer, Ovarian cancer, cancer awareness Odisha, Dr Dillip Muduly" />
-  <meta name="robots" content="index, follow" />
-  <title>Dr. Dillip Kumar Muduly | Surgical Oncologist | Dr Muduly’s Cancer Care</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Dr. Dillip Kumar Muduly | Senior Consultant Surgical Oncologist | Bhubaneswar</title>
+<meta name="description" content="Dr. Dillip Kumar Muduly – Senior Consultant, Surgical Oncology, Utkal Hospital, Bhubaneswar. Formerly Professor & Head, AIIMS Bhubaneswar. 23+ years expertise."/>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1VWYQV5NQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-M1VWYQV5NQ');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════════════════ */
+:root{
+  /* Deep navy — used for dark sections, nav, footer */
+  --ink:        #162040;
+  --ink-mid:    #1e2d56;
+  --ink-card:   #253565;
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  /* Accent colours */
+  --gold:       #b8860b;
+  --gold-vv:    #d4a017;
+  --gold-lt:    #e8c04a;
+  --teal:       #0e7490;
+  --teal-lt:    #0ea5c9;
+  --rose:       #c2455e;
 
-  <style>
-    :root {
-      --primary: #0f766e;
-      --primary-dark: #094440;
-      --secondary: #f97316;
-      --accent: #6366f1;
-      --bg: #f8fafc;
-      --text: #0f172a;
-      --text-light: #64748b;
-      --card-bg: #ffffff;
-      --border-soft: rgba(148, 163, 184, 0.25);
-      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
-      --radius-lg: 20px;
-      --radius-sm: 12px;
-      --radius-pill: 999px;
-      --nav-height: 80px;
-      --transition: all 0.3s ease;
-    }
+  /* Hero background — soft blue-to-blush */
+  --hero-bg:    #eef4fb;
+  --hero-card:  #dde8f8;
+  --hero-blush: #fce8f1;
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; display: block; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  /* Light section backgrounds */
+  --off:        #f4f8fc;
+  --white:      #ffffff;
 
-    /* Navigation */
-    header { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); background: rgba(248, 250, 252, 0.95); border-bottom: 1px solid var(--border-soft); }
-    .nav { height: var(--nav-height); display: flex; align-items: center; justify-content: space-between; }
-    .nav-left { display: flex; align-items: center; gap: 1rem; }
-    .logo-img{
-  height: 72px;          /* bigger logo */
-  width: auto;
-  border-radius: 14px;
-  background: #fff;
-  padding: 8px;          /* a bit more breathing space */
-  box-shadow: var(--shadow-soft);
-  object-fit: contain;   /* keeps logo intact */
-} 
-    .nav-links { display: flex; gap: 2rem; font-weight: 500; font-size: 0.95rem; }
-    .nav-links a:hover { color: var(--primary); }
-    .nav-links .cta { background: var(--primary); color: #fff; padding: 0.65rem 1.4rem; border-radius: var(--radius-pill); transition: var(--transition); }
-    .nav-links .cta:hover { background: var(--primary-dark); transform: translateY(-2px); }
-    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-    .nav-toggle span { width: 28px; height: 3px; background: var(--text); border-radius: 3px; transition: var(--transition); }
+  /* Text */
+  --tx-dark:    #111827;
+  --tx-body:    #374151;
+  --tx-mid:     #6b7a99;
+  --tx-dim:     #9db0c8;
 
-    /* Hero */
-    .hero { padding: 5rem 0 4rem; background: linear-gradient(to bottom, #e0f2fe, #f0fdfa); }
-    .hero-inner { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3rem; align-items: center; }
-    .hero h1 { font-family: 'Poppins', sans-serif; font-size: clamp(2.4rem, 5vw, 3.4rem); line-height: 1.2; margin-bottom: 1.2rem; }
-    .hero h1 span { background: linear-gradient(120deg, var(--primary), var(--accent)); -webkit-background-clip: text; color: transparent; }
-    .hero-subtitle { font-size: 1.15rem; margin: 1.5rem 0; color: var(--text-light); max-width: 600px; }
-    .btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1.8rem; border-radius: var(--radius-pill); font-weight: 600; transition: var(--transition); }
-    .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 12px 30px rgba(15, 118, 110, 0.25); }
-    .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(15, 118, 110, 0.35); }
-    .btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
-    .btn-outline:hover { background: var(--primary); color: #fff; }
+  /* On-dark text */
+  --dk-dim:     #93adc8;
+  --dk-mid:     #5e7a96;
 
-    /* Sections */
-    section { padding: 4rem 0; }
-    .section-title { font-family: 'Poppins', sans-serif; font-size: 2.4rem; text-align: center; margin-bottom: 1rem; }
-    .section-subtitle { text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--text-light); font-size: 1.1rem; }
-    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-    .card { background: var(--card-bg); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-soft); border: 1px solid var(--border-soft); transition: var(--transition); }
-    .card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12); }
+  /* Borders */
+  --b-gold:     rgba(184,134,11,.22);
+  --b-sub:      rgba(255,255,255,.08);
+  --b-lt:       rgba(22,32,64,.1);
 
-    /* Vertical Timeline - Interactive */
-    .timeline { position: relative; max-width: 900px; margin: 0 auto; }
-    .timeline::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background: linear-gradient(to bottom, var(--primary), var(--accent)); border-radius: 4px; transform: translateX(-50%); }
-    .timeline-item { position: relative; width: 50%; padding: 1.5rem; margin-bottom: 3rem; }
-    .timeline-item:nth-child(odd) { left: 0; text-align: right; padding-right: 5rem; }
-    .timeline-item:nth-child(even) { left: 50%; padding-left: 5rem; }
-    .timeline-dot { position: absolute; width: 22px; height: 22px; background: #fff; border: 5px solid var(--primary); border-radius: 50%; top: 2rem; box-shadow: 0 0 0 6px rgba(15,118,110,0.15); transition: var(--transition); }
-    .timeline-item:nth-child(odd) .timeline-dot { right: -11px; }
-    .timeline-item:nth-child(even) .timeline-dot { left: -11px; }
-    .timeline-content { background: var(--card-bg); border-radius: var(--radius-lg); padding: 1.8rem; box-shadow: var(--shadow-soft); transition: var(--transition); cursor: pointer; }
-    .timeline-content:hover { transform: scale(1.05) translateY(-10px); box-shadow: 0 25px 50px rgba(15,23,42,0.2); z-index: 10; }
-    .timeline-content:hover .timeline-dot { transform: scale(1.3); background: var(--primary); }
-    .timeline-year { font-weight: 700; color: var(--primary); font-size: 1.2rem; margin-bottom: 0.5rem; }
+  --sh:         0 4px 24px rgba(22,32,64,.10);
+  --sh-deep:    0 20px 60px rgba(22,32,64,.20);
 
-    /* Gallery Carousel with Arrows */
-    .gallery-container { position: relative; }
-    .gallery-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(15,118,110,0.8); color: #fff; border: none; width: 50px; height: 50px; border-radius: 50%; font-size: 2rem; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
-    .gallery-arrow:hover { background: var(--primary); transform: translateY(-50%) scale(1.1); }
-    .gallery-arrow.left { left: 10px; }
-    .gallery-arrow.right { right: 10px; }
-    .gallery-scroll { overflow-x: hidden; scroll-behavior: smooth; }
-    .gallery-images { display: flex; gap: 2rem; padding: 1rem 0; }
-    .gallery-item { min-width: 320px; cursor: pointer; }
-    .gallery-item img { height: 300px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); transition: var(--transition); }
-    .gallery-item img:hover { transform: scale(1.05); }
-    .gallery-caption { text-align: center; margin-top: 1rem; font-weight: 600; }
-
-    /* Modal for Gallery */
-    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); align-items: center; justify-content: center; z-index: 200; flex-direction: column; }
-    .modal-content { max-width: 90%; max-height: 90%; text-align: center; color: #fff; }
-    .modal-content img { max-width: 100%; max-height: 70vh; border-radius: var(--radius-lg); }
-    .modal-caption { margin-top: 1.5rem; font-size: 1.2rem; max-width: 800px; }
-    .close-modal { position: absolute; top: 20px; right: 30px; font-size: 3rem; color: #fff; cursor: pointer; }
-
-    /* Patient Stories */
-    .story-card { text-align: center; font-style: italic; }
-    .story-quote { font-size: 1.1rem; margin: 1.5rem 0; color: var(--text-light); }
-    .story-note { font-size: 0.85rem; color: var(--text-light); margin-top: 1rem; }
-
-    /* Mobile Responsiveness */
-    @media (max-width: 992px) {
-      .hero-inner, .grid-2 { grid-template-columns: 1fr; }
-      .grid-3 { grid-template-columns: repeat(2, 1fr); }
-      .hero-inner > div:last-child { order: -1; text-align: center; margin-bottom: 2rem; }
-    }
-    @media (max-width: 768px) {
-      .nav-links { position: fixed; top: var(--nav-height); left: 0; right: 0; background: #fff; flex-direction: column; padding: 2rem; align-items: center; box-shadow: var(--shadow-soft); transform: translateY(-100%); opacity: 0; visibility: hidden; transition: var(--transition); }
-      .nav-links.open { transform: translateY(0); opacity: 1; visibility: visible; }
-      .nav-toggle { display: flex; }
-      .hero { text-align: center; }
-      .grid-3 { grid-template-columns: 1fr; }
-      .gallery-arrow { width: 40px; height: 40px; font-size: 1.5rem; }
-      .timeline::before { left: 24px; }
-      .timeline-item { width: 100%; left: 0 !important; padding-left: 5.5rem; padding-right: 1rem; text-align: left !important; margin-bottom: 3rem; }
-      .timeline-item .timeline-dot { left: 13px !important; }
-      .timeline-item:nth-child(odd) { padding-right: 1rem; }
-    }
-
-    /* Fade-in */
-    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-/* Hero Slider Add-on */
-.hero-slider-wrap {
-  position: relative;
-  border-radius: var(--radius-lg);
+  /* ── NEW LIGHT SECTION BACKGROUNDS ── */
+  --bg-expertise: #f0f7f5;   /* soft sage-mint */
+  --bg-awards:    #f5f3ff;   /* very soft lavender */
+  --bg-collab:    #f0f6ff;   /* soft sky blue */
+  --bg-stories:   #fffbf0;   /* warm cream */
 }
 
-.hero-slides {
-  position: relative;
-  min-height: 520px; /* keeps height stable across slides */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:17px}
+body{font-family:'Inter','DM Sans',sans-serif;background:var(--off);color:var(--tx-body);overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',serif}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+
+/* ═══════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════ */
+nav{
+  position:fixed;inset:0 0 auto 0;z-index:999;
+  height:auto;
+  background:rgba(22,32,64,.98);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(184,134,11,.35);
+  display:flex;align-items:center;flex-wrap:wrap;padding:0 36px;gap:0;
+}
+.nav-brand{display:flex;flex-direction:column;gap:3px;margin-right:auto;padding:14px 0}
+.nav-brand-name{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;color:#fff;line-height:1;letter-spacing:-.01em}
+.nav-brand-sub{font-size:.62rem;font-weight:700;color:var(--gold-lt);letter-spacing:.2em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:2px;list-style:none;padding:10px 0}
+.nav-links a{font-size:.76rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--dk-dim);padding:7px 10px;border-radius:4px;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--gold-lt)}
+.nav-res{color:var(--gold-lt)!important;border:1px solid rgba(212,168,67,.28)}
+.nav-res:hover{background:rgba(212,168,67,.1)!important}
+.nav-cta{background:var(--teal)!important;color:#fff!important;padding:7px 16px!important;font-weight:700!important;border-radius:4px;transition:background .2s!important}
+.nav-cta:hover{background:var(--teal-lt)!important}
+/* Mobile hamburger */
+.nav-toggle{display:none;background:none;border:1.5px solid rgba(255,255,255,.3);color:#fff;padding:6px 11px;border-radius:5px;cursor:pointer;font-size:1.1rem;margin-left:8px}
+@media(max-width:980px){
+  .nav-toggle{display:block}
+  .nav-links{display:none;width:100%;flex-direction:column;align-items:flex-start;padding:8px 0 14px;gap:4px}
+  .nav-links.open{display:flex}
+  .nav-links.open a{font-size:.9rem;padding:9px 6px;width:100%;border-bottom:1px solid rgba(255,255,255,.06)}
 }
 
-/* Fade logic: all slides overlap, only active is visible */
-.hero-slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 650ms ease;
+/* ═══════════════════════════════════════════
+   NMC STRIP
+═══════════════════════════════════════════ */
+.nmc-strip{
+  background:#fffbf0;border-bottom:1px solid rgba(184,134,11,.18);
+  padding:6px 40px;font-size:.67rem;color:#7a5e10;letter-spacing:.02em;text-align:center;
+  position:relative;z-index:998;
 }
 
-.hero-slide.is-active {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+/* ═══════════════════════════════════════════
+   HERO  — split: text left | photo right
+═══════════════════════════════════════════ */
+.hero{
+  min-height:100vh;padding-top:110px;
+  display:grid;
+  grid-template-columns:1fr 460px;
+  background:var(--hero-bg);
+  position:relative;overflow:hidden;
 }
 
-.hero-cta-row {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+/* Soft decorative blobs */
+.hero-blob1{
+  position:absolute;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(14,116,144,.12) 0%,transparent 70%);
+  top:-160px;right:380px;pointer-events:none;
+}
+.hero-blob2{
+  position:absolute;width:380px;height:380px;border-radius:50%;
+  background:radial-gradient(circle,rgba(194,69,94,.09) 0%,transparent 70%);
+  bottom:-80px;left:5%;pointer-events:none;
+}
+.hero-blob3{
+  position:absolute;width:300px;height:300px;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,134,11,.07) 0%,transparent 70%);
+  top:30%;left:38%;pointer-events:none;
 }
 
-.hero-img-col {
-  text-align: center;
+/* ── left text column ── */
+.hero-text{
+  padding:32px 52px 48px 60px;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;z-index:2;
 }
 
-.hero-img {
-  width: 100%;
-  max-width: 420px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
-  object-fit: cover;
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.63rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--teal);
+  background:rgba(14,116,144,.08);
+  border:1px solid rgba(14,116,144,.22);
+  padding:5px 14px;border-radius:20px;margin-bottom:20px;
+  width:fit-content;
 }
 
-/* Arrows */
-.hero-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: 1px solid var(--border-soft);
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(8px);
-  box-shadow: var(--shadow-soft);
-  font-size: 2rem;
-  line-height: 1;
-  cursor: pointer;
-  z-index: 5;
-  transition: var(--transition);
+.hero h1{
+  font-size:clamp(2.6rem,3.8vw,3.9rem);
+  font-weight:700;line-height:1.06;
+  color:var(--tx-dark);letter-spacing:-.02em;
+  margin-bottom:10px;
+}
+.hero h1 em{font-style:normal;color:var(--teal)}
+
+.hero-desig{
+  font-size:.97rem;font-weight:600;color:var(--ink);margin-bottom:4px;
+}
+.hero-formerly{
+  font-size:.77rem;color:var(--tx-mid);font-style:italic;margin-bottom:20px;
 }
 
-.hero-arrow:hover {
-  transform: translateY(-50%) scale(1.06);
-  background: #fff;
+.hero-tagline{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.22rem;font-style:italic;font-weight:500;color:var(--tx-mid);
+  line-height:1.65;margin-bottom:28px;
+  border-left:3px solid var(--teal);
+  padding:10px 0 10px 16px;
+  background:linear-gradient(90deg,rgba(14,116,144,.06) 0%,transparent 100%);
+  border-radius:0 6px 6px 0;
 }
 
-.hero-arrow-left { left: -10px; }
-.hero-arrow-right { right: -10px; }
+/* Stats strip */
+.hero-stats{
+  display:flex;gap:0;margin-bottom:32px;
+  background:var(--white);
+  border:1px solid var(--b-lt);
+  border-radius:10px;
+  box-shadow:var(--sh);
+  width:fit-content;overflow:hidden;
+}
+.stat-box{padding:14px 24px;text-align:center;position:relative}
+.stat-box+.stat-box::before{content:'';position:absolute;left:0;top:18%;height:64%;width:1px;background:var(--b-lt)}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:700;color:var(--teal);line-height:1}
+.stat-l{font-size:.56rem;text-transform:uppercase;letter-spacing:.12em;color:var(--tx-mid);margin-top:4px;font-weight:600}
 
-/* Dots */
-.hero-dots {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 1.6rem;
+/* Credential pills row */
+.hero-creds{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:28px}
+.hc-pill{
+  font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:4px 11px;border-radius:20px;border:1px solid rgba(22,32,64,.14);
+  background:var(--white);color:var(--ink);box-shadow:0 1px 4px rgba(22,32,64,.08);
 }
 
-.hero-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  border: 0;
-  cursor: pointer;
-  background: rgba(15, 23, 42, 0.25);
-  transition: var(--transition);
+/* CTA buttons */
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{
+  background:var(--teal);color:#fff;
+  padding:13px 28px;border-radius:6px;border:none;
+  font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  cursor:pointer;transition:background .2s,transform .15s;display:inline-block;
+  box-shadow:0 4px 18px rgba(14,116,144,.35);
+}
+.btn-primary:hover{background:var(--teal-lt);transform:translateY(-1px)}
+.btn-secondary{
+  background:transparent;color:var(--ink);
+  padding:12px 24px;border-radius:6px;
+  border:1.5px solid rgba(22,32,64,.28);
+  font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  cursor:pointer;transition:all .2s;display:inline-block;
+}
+.btn-secondary:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* ── right column: info panel + photo stacked ── */
+.hero-right{
+  display:flex;flex-direction:column;
+  position:relative;z-index:2;
+}
+.hero-info-panel{
+  background:rgba(255,255,255,.72);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(14,116,144,.12);
+  padding:20px 22px;
+  display:flex;flex-direction:column;gap:12px;
+}
+.hip-row{display:flex;gap:10px}
+.hip-badge{
+  flex:1;display:flex;align-items:center;gap:10px;
+  background:var(--white);border:1px solid rgba(14,116,144,.15);
+  border-radius:8px;padding:10px 12px;
+  box-shadow:0 2px 8px rgba(22,32,64,.07);
+}
+.hip-icon{font-size:1.3rem;flex-shrink:0}
+.hip-val{font-size:.8rem;font-weight:700;color:var(--tx-dark);line-height:1.2}
+.hip-sub{font-size:.64rem;color:var(--tx-mid);margin-top:2px}
+.hip-highlight{
+  background:linear-gradient(90deg,var(--teal),#0891b2);
+  border-radius:8px;padding:12px 16px;
+  display:flex;align-items:center;gap:16px;
+}
+.hip-hl-label{font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:3px}
+.hip-hl-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:#fff;line-height:1}
+.hip-hl-sub{font-size:.72rem;color:rgba(255,255,255,.82);margin-top:2px}
+
+/* ── right photo column ── */
+.hero-photo{
+  position:relative;overflow:hidden;flex:1;
+  background:linear-gradient(160deg, var(--hero-card) 0%, var(--hero-blush) 100%);
+  display:flex;align-items:flex-end;min-height:320px;
+}
+.hero-photo img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:top center;
+  display:block;
+}
+.hero-photo-placeholder{
+  width:100%;height:100%;min-height:460px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:14px;color:var(--tx-mid);text-align:center;padding:32px;
+}
+.hero-photo-placeholder .ph-icon{font-size:3.5rem;opacity:.25}
+.hero-photo-placeholder .ph-hint{
+  font-size:.72rem;background:rgba(255,255,255,.7);
+  border:1px dashed var(--b-lt);padding:8px 14px;border-radius:6px;
+  color:var(--tx-mid);line-height:1.6;
 }
 
-.hero-dot.is-active {
-  width: 28px;
-  background: linear-gradient(120deg, var(--primary), var(--accent));
+/* Credential bar overlaid at bottom of photo */
+.photo-cred-bar{
+  position:absolute;bottom:0;left:0;right:0;
+  background:rgba(22,32,64,.88);backdrop-filter:blur(10px);
+  padding:10px 18px;
+  display:flex;gap:14px;align-items:center;flex-wrap:wrap;
 }
+.pc{font-size:.62rem;font-weight:800;color:var(--gold-lt);letter-spacing:.1em;text-transform:uppercase}
+.pc-dot{width:3px;height:3px;border-radius:50%;background:var(--gold-lt);opacity:.4}
 
-/* Mobile tweaks */
-@media (max-width: 992px) {
-  .hero-slides { min-height: 720px; }
-  .hero-arrow-left { left: 6px; }
-  .hero-arrow-right { right: 6px; }
+
+
+/* ═══════════════════════════════════════════
+   SHARED SECTION STYLES
+═══════════════════════════════════════════ */
+section{padding:84px 0}
+.sec-dark{background:var(--ink)}
+.sec-mid{background:var(--ink-mid)}
+.sec-light{background:var(--off)}
+.sec-white{background:var(--white)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 48px}
+.sec-lbl{font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-lt);margin-bottom:10px}
+.sec-lbl.lt{color:var(--teal)}
+.sec-title{font-size:clamp(2rem,3vw,2.75rem);font-weight:600;line-height:1.12;margin-bottom:14px}
+.sec-title.dk{color:#fff}
+.sec-title.lt{color:var(--tx-dark)}
+.sec-sub{font-size:.95rem;line-height:1.78;max-width:600px}
+.sec-sub.dk{color:var(--dk-dim)}
+.sec-sub.lt{color:var(--tx-mid)}
+.rule{width:40px;height:3px;border-radius:2px;margin:14px 0 38px;background:linear-gradient(90deg,var(--teal),var(--gold-vv))}
+
+/* ═══════════════════════════════════════════
+   EXPERTISE — horizontal scroll
+═══════════════════════════════════════════ */
+.exp-hd{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px}
+.arr-wrap{display:flex;gap:9px}
+.arr{
+  width:38px;height:38px;border-radius:50%;
+  border:1.5px solid rgba(184,134,11,.32);
+  background:transparent;color:var(--gold-vv);
+  font-size:.95rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .2s;
 }
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .hero-slide { transition: none; }
-  .hero-arrow { transition: none; }
-  .hero-dot { transition: none; }
+.arr:hover{background:var(--gold-vv);color:var(--ink);border-color:var(--gold-vv)}
+.arr:disabled{opacity:.22;cursor:default}
+.arr:disabled:hover{background:transparent;color:var(--gold-vv);border-color:rgba(184,134,11,.32)}
+.hs-outer{overflow:hidden}
+.hs-track{display:flex;gap:15px;transition:transform .5s cubic-bezier(.25,.46,.45,.94);will-change:transform}
+.exp-card{
+  flex:0 0 268px;
+  background:#ffffff;
+  border:1px solid rgba(14,116,144,.12);
+  border-radius:12px;padding:26px 22px;
+  position:relative;overflow:hidden;
+  transition:all .3s;
+  box-shadow:0 2px 12px rgba(22,32,64,.07);
 }
+.exp-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--teal-lt),var(--gold-vv));
+  transform:scaleX(0);transform-origin:left;transition:transform .35s;
+}
+.exp-card:hover{
+  border-color:rgba(14,116,144,.3);
+  background:#f0faf8;
+  transform:translateY(-5px);
+  box-shadow:0 14px 40px rgba(14,116,144,.15);
+}
+.exp-card:hover::before{transform:scaleX(1)}
+.exp-icon{font-size:1.75rem;margin-bottom:12px}
+.exp-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--tx-dark);margin-bottom:9px;line-height:1.3}
+.exp-desc{font-size:.82rem;color:var(--tx-mid);line-height:1.76}
+.exp-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+.exp-tag{font-size:.62rem;background:rgba(14,116,144,.1);color:var(--teal);padding:4px 9px;border-radius:10px;font-weight:600;letter-spacing:.04em}
+/* Expertise light section */
+.sec-expertise{background:var(--bg-expertise)}
+.sec-expertise .sec-lbl{color:var(--teal)}
+.sec-expertise .sec-title{color:var(--tx-dark)}
+.sec-expertise .rule{background:linear-gradient(90deg,var(--teal),var(--gold-vv))}
+.sec-expertise .arr{border-color:rgba(14,116,144,.3);background:#fff;color:var(--teal);box-shadow:0 2px 8px rgba(22,32,64,.08)}
+.sec-expertise .arr:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.sec-expertise .arr:disabled{opacity:.3}
+.sec-expertise .arr:disabled:hover{background:#fff;color:var(--teal);border-color:rgba(14,116,144,.3)}
 
-  </style>
+/* ═══════════════════════════════════════════
+   JOURNEY
+═══════════════════════════════════════════ */
+.journey-grid{display:grid;grid-template-columns:3fr 2fr;gap:52px;align-items:start}
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:9px;top:8px;bottom:0;width:1px;background:rgba(14,116,144,.2)}
+.tl{position:relative;margin-bottom:34px}
+.tl-dot{position:absolute;left:-28px;top:7px;width:10px;height:10px;border-radius:50%;border:2px solid var(--teal);background:var(--off)}
+.tl-dot.now{background:var(--teal);border-color:var(--teal);box-shadow:0 0 0 4px rgba(14,116,144,.18)}
+.tl-yr{font-size:.67rem;font-weight:700;color:var(--teal);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.tl-ttl{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:var(--tx-dark);margin-bottom:4px}
+.tl-org{font-size:.84rem;color:var(--rose);margin-bottom:5px;font-weight:600}
+.tl-dsc{font-size:.83rem;color:var(--tx-mid);line-height:1.75}
+.roles-panel{background:#fff;border-radius:12px;border:1px solid rgba(14,116,144,.12);padding:28px;box-shadow:0 2px 12px rgba(22,32,64,.07)}
+.role-item{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(14,116,144,.1)}
+.role-item:last-child{border:none;padding-bottom:0;margin-bottom:0}
+.role-badge{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:5px}
+.role-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--tx-dark);margin-bottom:3px}
+.role-org{font-size:.76rem;color:var(--tx-mid)}
+
+/* ═══════════════════════════════════════════
+   AWARDS
+═══════════════════════════════════════════ */
+.awards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.sec-awards{background:var(--bg-awards)}
+.sec-awards .sec-lbl{color:var(--teal)}
+.sec-awards .sec-title{color:var(--tx-dark)}
+.sec-awards .sec-sub{color:var(--tx-mid)}
+.award-card{
+  background:#fff;border:1px solid rgba(14,116,144,.12);
+  border-radius:12px;padding:20px 22px;
+  display:flex;gap:15px;align-items:flex-start;
+  transition:transform .2s,box-shadow .2s;
+  box-shadow:0 2px 12px rgba(22,32,64,.07);
+}
+.award-card:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(14,116,144,.15)}
+.award-ico{flex-shrink:0;width:42px;height:42px;border-radius:10px;background:rgba(14,116,144,.1);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.award-type{font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:4px}
+.award-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--tx-dark);margin-bottom:4px;line-height:1.3}
+.award-body{font-size:.78rem;color:var(--tx-mid);margin-bottom:4px;line-height:1.55}
+.award-date{font-size:.68rem;color:var(--teal);font-weight:700}
+
+/* ═══════════════════════════════════════════
+   RESEARCH
+═══════════════════════════════════════════ */
+.research-split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}
+.r-stat{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:700;color:var(--teal);line-height:1}
+.r-stat-lbl{color:var(--tx-mid);font-size:.92rem;margin-top:6px;margin-bottom:16px}
+.r-desc{font-size:.88rem;color:var(--tx-mid);line-height:1.82;margin-bottom:20px}
+.r-links{display:flex;gap:10px;flex-wrap:wrap}
+.r-link{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(14,116,144,.07);border:1px solid rgba(14,116,144,.2);
+  color:var(--teal);padding:8px 15px;border-radius:6px;
+  font-size:.74rem;font-weight:600;transition:background .2s;
+}
+.r-link:hover{background:rgba(14,116,144,.16)}
+.r-box{
+  background:var(--white);border:1px solid var(--b-lt);
+  border-radius:8px;padding:18px 20px;margin-bottom:11px;box-shadow:var(--sh);
+}
+.r-box-lbl{font-size:.61rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+.r-box-val{font-size:.87rem;color:var(--tx-body);line-height:1.72}
+
+/* ═══════════════════════════════════════════
+   COLLABORATIONS
+═══════════════════════════════════════════ */
+.collab-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.sec-collab{background:var(--bg-collab)}
+.sec-collab .sec-lbl{color:var(--teal)}
+.sec-collab .sec-title{color:var(--tx-dark)}
+.sec-collab .sec-sub{color:var(--tx-mid)}
+.c-tab{
+  padding:8px 16px;border-radius:7px;
+  border:1px solid rgba(14,116,144,.25);background:#fff;
+  color:var(--tx-mid);font-size:.78rem;font-weight:500;
+  cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;
+  box-shadow:0 1px 4px rgba(22,32,64,.07);
+}
+.c-tab:hover,.c-tab.on{background:var(--teal);color:#fff;border-color:var(--teal);font-weight:600}
+.c-panel{display:none}
+.c-panel.on{display:block;animation:fi .3s ease}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.c-box{background:#fff;border:1px solid rgba(14,116,144,.12);border-radius:12px;padding:32px;box-shadow:0 2px 12px rgba(22,32,64,.07)}
+.c-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--tx-dark);margin-bottom:10px}
+.c-desc{font-size:.88rem;color:var(--tx-mid);line-height:1.82}
+
+/* ═══════════════════════════════════════════
+   VIDEO SECTION
+═══════════════════════════════════════════ */
+.media-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.m-tab{
+  padding:6px 14px;border-radius:20px;
+  border:1px solid var(--b-lt);background:var(--white);
+  color:var(--tx-mid);font-size:.69rem;font-weight:500;
+  cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;
+  box-shadow:0 1px 4px rgba(22,32,64,.06);
+}
+.m-tab:hover,.m-tab.on{background:var(--ink);color:var(--gold-lt);border-color:var(--ink)}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:18px}
+.video-card{background:var(--white);border:1px solid var(--b-lt);border-radius:10px;overflow:hidden;transition:transform .2s,box-shadow .2s;box-shadow:var(--sh)}
+.video-card:hover{transform:translateY(-3px);box-shadow:var(--sh-deep)}
+.video-thumb{position:relative;aspect-ratio:16/9;background:var(--ink-mid);cursor:pointer;overflow:hidden}
+.video-thumb img{width:100%;height:100%;object-fit:cover}
+.video-overlay{position:absolute;inset:0;background:rgba(22,32,64,.42);display:flex;align-items:center;justify-content:center;transition:background .2s}
+.video-thumb:hover .video-overlay{background:rgba(22,32,64,.2)}
+.play-btn{width:48px;height:48px;border-radius:50%;background:var(--gold-vv);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:.95rem;padding-left:3px;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:transform .2s}
+.video-thumb:hover .play-btn{transform:scale(1.1)}
+.video-info{padding:14px 16px}
+.video-cat{font-size:.58rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:5px}
+.video-title{font-family:'Cormorant Garamond',serif;font-size:.98rem;font-weight:600;color:var(--tx-dark);line-height:1.35}
+.vid-ph{background:var(--hero-card);border:1px dashed rgba(14,116,144,.25);border-radius:10px;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--tx-mid);text-align:center;padding:20px}
+.vid-ph .pi{font-size:2rem;opacity:.25}
+.vid-ph p{font-size:.72rem}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:9999;background:rgba(22,32,64,.96);display:none;align-items:center;justify-content:center;padding:40px}
+.lb.open{display:flex}
+.lb-inner{position:relative;width:100%;max-width:900px}
+.lb-close{position:absolute;top:-40px;right:0;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}
+.lb-frame{width:100%;aspect-ratio:16/9;border:none;border-radius:6px}
+
+/* ═══════════════════════════════════════════
+   GALLERY
+═══════════════════════════════════════════ */
+.gal-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.g-tab{
+  padding:6px 14px;border-radius:20px;
+  border:1px solid rgba(184,134,11,.25);background:transparent;
+  color:var(--dk-dim);font-size:.69rem;font-weight:500;
+  cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;
+}
+.g-tab:hover,.g-tab.on{background:var(--gold-vv);color:var(--ink);border-color:var(--gold-vv);font-weight:700}
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:11px}
+.g-item{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/3;cursor:pointer;background:var(--ink-card);border:1px solid var(--b-sub)}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.g-item:hover img{transform:scale(1.07)}
+.g-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(22,32,64,.75) 0%,transparent 50%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:11px}
+.g-item:hover .g-ov{opacity:1}
+.g-lbl{font-size:.67rem;color:#fff;font-weight:500}
+.g-ph{border:1px dashed rgba(184,134,11,.22);border-radius:8px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--dk-dim);font-size:.67rem;text-align:center;padding:12px;opacity:.5}
+.glb{position:fixed;inset:0;z-index:9999;background:rgba(22,32,64,.97);display:none;align-items:center;justify-content:center;flex-direction:column;gap:14px;padding:40px}
+.glb.open{display:flex}
+.glb img{max-width:100%;max-height:82vh;border-radius:6px;box-shadow:var(--sh-deep)}
+.glb-x{position:absolute;top:18px;right:22px;background:none;border:none;color:#fff;font-size:1.8rem;cursor:pointer}
+
+/* ═══════════════════════════════════════════
+   PATIENT STORIES
+═══════════════════════════════════════════ */
+.stories-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:18px}
+.sec-stories{background:var(--bg-stories)}
+.sec-stories .sec-lbl{color:var(--teal)}
+.sec-stories .sec-title{color:var(--tx-dark)}
+.sec-stories .sec-sub{color:var(--tx-mid)}
+.story{
+  background:#fff;
+  border-left:4px solid var(--gold-vv);
+  border-radius:0 10px 10px 0;
+  border-top:1px solid rgba(184,134,11,.1);
+  border-bottom:1px solid rgba(184,134,11,.1);
+  border-right:1px solid rgba(184,134,11,.1);
+  padding:24px;transition:box-shadow .2s;
+  box-shadow:0 2px 10px rgba(22,32,64,.07);
+}
+.story:hover{box-shadow:0 8px 28px rgba(22,32,64,.12)}
+.story-q{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--tx-body);line-height:1.72;margin-bottom:12px}
+.story-attr{font-size:.72rem;color:var(--teal);font-weight:700;letter-spacing:.06em}
+
+/* ═══════════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════════ */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px}
+.ci{display:flex;gap:12px;margin-bottom:22px;align-items:flex-start}
+.ci-ico{font-size:1.1rem;margin-top:2px;flex-shrink:0}
+.ci-lbl{font-size:.59rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:4px}
+.ci-val{font-size:.94rem;color:#fff}
+.ci-val a{color:var(--gold-lt)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ff{margin-bottom:14px;position:relative}
+.ff label{display:block;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#a9c0d8;margin-bottom:7px}
+.ff label .opt{font-weight:400;opacity:.65;text-transform:none;letter-spacing:0;font-size:.85em}
+.ff input,.ff select,.ff textarea{
+  width:100%;background:rgba(255,255,255,.07);
+  border:1.5px solid rgba(200,168,75,.22);border-radius:8px;
+  color:#fff;font-family:'Inter','DM Sans',sans-serif;font-size:.93rem;
+  padding:11px 14px;outline:none;transition:border-color .2s,box-shadow .2s,background .2s;
+}
+.ff input::placeholder,.ff textarea::placeholder{color:rgba(255,255,255,.35)}
+.ff select{color:rgba(255,255,255,.9)}
+.ff select option{background:#1e2d56;color:#fff}
+.ff input:focus,.ff select:focus,.ff textarea:focus{
+  border-color:var(--gold-vv);
+  background:rgba(255,255,255,.1);
+  box-shadow:0 0 0 3px rgba(200,168,75,.14);
+}
+.ff input.invalid,.ff select.invalid,.ff textarea.invalid{
+  border-color:#ff7a7a!important;
+  box-shadow:0 0 0 3px rgba(255,122,122,.15)!important;
+}
+.ff .err{display:none;margin-top:5px;font-size:.72rem;color:#ffb3b3;font-weight:500}
+.ff .err.show{display:block}
+.ff textarea{min-height:78px;resize:vertical}
+/* section divider label in form */
+.form-section-lbl{
+  font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--teal-lt);margin:18px 0 12px;padding-bottom:6px;
+  border-bottom:1px solid rgba(14,116,144,.22);
+}
+.btn-wa{
+  width:100%;background:#22c55e;color:#fff;
+  padding:15px 24px;border-radius:8px;border:none;
+  font-family:'Inter','DM Sans',sans-serif;font-size:.95rem;font-weight:700;letter-spacing:.04em;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;
+  transition:background .2s,transform .15s,box-shadow .2s;
+  box-shadow:0 4px 20px rgba(34,197,94,.35);
+  margin-top:6px;
+}
+.btn-wa:hover{background:#16a34a;transform:translateY(-1px);box-shadow:0 8px 28px rgba(34,197,94,.45)}
+.btn-wa:active{transform:translateY(0)}
+/* sending state */
+.btn-wa.sending{background:#15803d;pointer-events:none}
+.f-nmc{font-size:.72rem;color:rgba(147,173,200,.8);margin-top:11px;line-height:1.65;text-align:center}
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+footer{
+  background:#0b1526;
+  border-top:1px solid rgba(184,134,11,.18);
+  padding:38px 48px;
+  display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;
+}
+.f-sloka{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--gold-lt)}
+.f-sub{font-size:.74rem;color:var(--dk-dim)}
+.f-links{display:flex;gap:18px;margin-top:4px}
+.f-links a{font-size:.74rem;color:var(--gold-lt)}
+.f-disc{font-size:.59rem;color:#253040;margin-top:3px}
+
+/* ═══════════════════════════════════════════
+   REVEAL ANIMATION
+═══════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+@media(max-width:980px){
+  .hero{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .hero-text{padding:48px 24px 40px}
+  .journey-grid,.contact-grid,.research-split{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .contact-grid{gap:36px}
+  nav{padding:0 16px;gap:6px}
+  .wrap{padding:0 20px}
+  section{padding:62px 0}
+}
+</style>
 </head>
 <body>
-  <div class="page-wrapper">
 
-    <!-- Navigation -->
-    <header>
-      <div class="container">
-        <nav class="nav">
-          <div class="nav-left">
-            <img src="assets/logo-dmcc.png" alt="Dr Muduly’s Cancer Care Logo" class="logo-img" />
-          </div>
-          <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
-            <span></span><span></span><span></span>
-          </button>
-          <div class="nav-links" id="navLinks">
-            <a href="#home">Home</a>
-            <a href="#journey">Journey</a>
-            <a href="#education">Patient Education</a>
-            <a href="#research">Research Profile</a>
-	    <a href="#collab">Collaborations</a>
-            <a href="#media">Awareness & Media</a>
-            <a href="#stories">Patient Stories</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact" class="cta">Book Appointment</a>
-          </div>
-        </nav>
+<!-- ════════════════ FIXED HEADER ════════════════ -->
+<div id="site-header" style="position:fixed;top:0;left:0;right:0;z-index:999;">
+<nav>
+  <div class="nav-brand">
+    <span class="nav-brand-name">Dr. Dillip Kumar Muduly</span>
+    <span class="nav-brand-sub">Surgical Oncologist · Bhubaneswar</span>
+  </div>
+  <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">☰</button>
+  <ul class="nav-links">
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#journey">Journey</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#collab">Collaborations</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="patient-resources.html" target="_blank" class="nav-res">Patient Resources</a></li>
+    <li><a href="professional-resources.html" target="_blank" class="nav-res">Professional Resources</a></li>
+    <li><a href="#contact" class="nav-cta">Book Appointment</a></li>
+  </ul>
+</nav>
+
+<div class="nmc-strip">⚖️ Educational information only — not medical advice. In compliance with NMC Advertising Guidelines 2023.</div>
+</div><!-- end site-header -->
+
+<!-- ════════════════ HERO ════════════════ -->
+<section id="home" class="hero">
+  <div class="hero-blob1"></div>
+  <div class="hero-blob2"></div>
+  <div class="hero-blob3"></div>
+
+  <!-- LEFT: text -->
+  <div class="hero-text">
+    <div class="hero-eyebrow">Surgical Oncologist · Bhubaneswar, Odisha</div>
+
+    <h1>Dr. Dillip Kumar<br><em>Muduly</em></h1>
+
+    <div class="hero-desig">Senior Consultant, Surgical Oncology · Utkal Hospital, Bhubaneswar</div>
+    <div class="hero-formerly">Formerly: Professor &amp; Head, Surgical Oncology, AIIMS Bhubaneswar</div>
+
+    <!-- Credential pills -->
+    <div class="hero-creds">
+      <span class="hc-pill">MS (Surgery)</span>
+      <span class="hc-pill">MCh Surgical Oncology</span>
+      <span class="hc-pill">FACS</span>
+      <span class="hc-pill">FUICC</span>
+    </div>
+
+    <div class="hero-tagline">
+      "Driven by the 3C's of Care —<br>Competence, Commitment, Compassion"
+    </div>
+
+    <!-- Stats box -->
+    <div class="hero-stats">
+      <div class="stat-box">
+        <div class="stat-n">23+</div>
+        <div class="stat-l">Years Experience</div>
       </div>
-    </header>
+      <div class="stat-box">
+        <div class="stat-n">170+</div>
+        <div class="stat-l">Publications</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-n">8</div>
+        <div class="stat-l">Intl. Awards</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-n">13</div>
+        <div class="stat-l">Specialties</div>
+      </div>
+    </div>
 
-    <!-- Hero -->
-<!-- Hero Slider (Fade) -->
-<section class="hero fade-in hero-slider" id="home" aria-label="Hero highlights">
-  <div class="container">
-    <div class="hero-slider-wrap" id="heroSlider" tabindex="0">
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Book Appointment</a>
+      <a href="https://www.researchgate.net/profile/Dillip-Muduly" target="_blank" class="btn-secondary">View Publications →</a>
+    </div>
+  </div>
 
-      <!-- Arrows -->
-      <button class="hero-arrow hero-arrow-left" type="button" aria-label="Previous slide" onclick="heroPrev()">‹</button>
-      <button class="hero-arrow hero-arrow-right" type="button" aria-label="Next slide" onclick="heroNext()">›</button>
+  <!-- RIGHT: photo + info stack -->
+  <div class="hero-right">
 
-      <!-- Slides -->
-      <div class="hero-slides" id="heroSlides">
+    <!-- Top info panel — fills space above photo -->
+    <div class="hero-info-panel">
+      <div class="hip-row">
+        <div class="hip-badge"><span class="hip-icon">🏅</span><div><div class="hip-val">ASOO President</div><div class="hip-sub">Odisha State Chapter</div></div></div>
+        <div class="hip-badge"><span class="hip-icon">🌍</span><div><div class="hip-val">FUICC Fellow</div><div class="hip-sub">UICC, Geneva</div></div></div>
+      </div>
+      <div class="hip-row">
+        <div class="hip-badge"><span class="hip-icon">🔬</span><div><div class="hip-val">170+ Publications</div><div class="hip-sub">Indexed Research Journals</div></div></div>
+        <div class="hip-badge"><span class="hip-icon">🏆</span><div><div class="hip-val">8 Intl. Awards</div><div class="hip-sub">Across 6 Countries</div></div></div>
+      </div>
+    </div>
 
-        <!-- Slide 1 -->
-        <article class="hero-slide is-active" data-index="0">
-          <div class="hero-inner">
-            <div>
-              <h1>
-                Transforming Fear into Fortitude<br>
-                <span>Patient-First Surgical Oncology</span>
-              </h1>
-              <p class="hero-subtitle">
-                Driven by the 3C’s of Care: Competence, Commitment, Compassion<br><br>
-                Professor &amp; Head, Surgical Oncology, AIIMS Bhubaneswar<br>
-                23+ years experience | Specialist in Breast &amp; GI Oncology
-              </p>
-              <div class="hero-cta-row">
-                <a href="#contact" class="btn btn-primary">Book Appointment</a>
-                <a href="https://www.researchgate.net/profile/Dillip-Muduly" target="_blank" class="btn btn-outline">View Publications (170+)</a>
-              </div>
-            </div>
-            <div class="hero-img-col">
-              <img src="assets/dr-muduly-photo.jpg" alt="Dr. Dillip Kumar Muduly - portrait" class="hero-img">
-            </div>
-          </div>
-        </article>
+    <!-- Photo -->
+    <div class="hero-photo" id="hero-photo-col">
+      <img
+        src="assets/gallery/hero_image.jpg"
+        alt="Dr. Dillip Kumar Muduly — Senior Consultant, Surgical Oncology"
+        id="hero-img"
+        onerror="this.style.display='none';document.getElementById('hero-ph').style.display='flex'"
+      >
+      <div class="hero-photo-placeholder" id="hero-ph" style="display:none">
+        <div class="ph-icon">👨‍⚕️</div>
+        <div class="ph-hint">Upload photo as:<br><strong>assets/gallery/hero_image.jpg</strong></div>
+      </div>
+      <div class="photo-cred-bar">
+        <span class="pc">FACS</span><span class="pc-dot"></span>
+        <span class="pc">FUICC</span><span class="pc-dot"></span>
+        <span class="pc">MCh Surgical Oncology</span><span class="pc-dot"></span>
+        <span class="pc">AIIMS New Delhi &amp; Bhubaneswar</span>
+      </div>
+    </div>
 
-        <!-- Slide 2 -->
-        <article class="hero-slide" data-index="1">
-          <div class="hero-inner">
-            <div>
-              <h1>
-                Precision in Every Cut<br>
-                <span>Advanced Surgical Oncology Expertise</span>
-              </h1>
-              <p class="hero-subtitle">
-                Breast conservation surgery, gastric cancer resections, minimally invasive and organ-preserving oncologic procedures guided by evidence and compassion.
-              </p>
-              <div class="hero-cta-row">
-                <a href="#contact" class="btn btn-primary">Book Appointment</a>
-                <a href="#journey" class="btn btn-outline">View Journey</a>
-              </div>
-            </div>
-            <div class="hero-img-col">
-              <img src="assets/dr-muduly-hero-surgical-expertise.jpg" alt="Surgical oncology expertise" class="hero-img">
-            </div>
-          </div>
-        </article>
+  </div>
+</section>
 
-        <!-- Slide 3 -->
-        <article class="hero-slide" data-index="2">
-          <div class="hero-inner">
-            <div>
-              <h1>
-                Where Practice Meets Research<br>
-                <span>170+ Peer-Reviewed Publications</span>
-              </h1>
-              <p class="hero-subtitle">
-                Contributing to global oncology literature and shaping evidence from Eastern India for real-world guidelines and practice.
-              </p>
-              <div class="hero-cta-row">
-                <a href="#research" class="btn btn-primary">Research Profile</a>
-                <a href="https://scholar.google.com/scholar?q=author:%22Dillip+Kumar+Muduly%22+OR+author:%22DK+Muduly%22" target="_blank" class="btn btn-outline">Google Scholar</a>
-              </div>
-            </div>
-            <div class="hero-img-col">
-              <img src="assets/dr-muduly-hero-academic-research.jpg" alt="Academic and research leadership" class="hero-img">
-            </div>
-          </div>
-        </article>
+<!-- ════════════════ EXPERTISE ════════════════ -->
+<section id="expertise" class="sec-expertise">
+  <div class="wrap">
+    <div class="exp-hd">
+      <div>
+        <div class="sec-lbl lt">Clinical Specialisation</div>
+        <h2 class="sec-title lt">Areas of Expertise</h2>
+        <div class="rule" style="margin-bottom:0"></div>
+      </div>
+      <div class="arr-wrap">
+        <button class="arr" id="ep" disabled>&#8592;</button>
+        <button class="arr" id="en">&#8594;</button>
+      </div>
+    </div>
+    <div class="hs-outer">
+      <div class="hs-track" id="et">
 
-        <!-- Slide 4 -->
-        <article class="hero-slide" data-index="3">
-          <div class="hero-inner">
-            <div>
-              <h1>
-                Building Cancer Care for Odisha<br>
-                <span>From Awareness to Access</span>
-              </h1>
-              <p class="hero-subtitle">
-                Focused on early detection, timely diagnosis, and equitable access to quality cancer care across Odisha.
-              </p>
-              <div class="hero-cta-row">
-                <a href="#media" class="btn btn-primary">Awareness &amp; Media</a>
-                <a href="#collab" class="btn btn-outline">Collaborations</a>
-              </div>
-            </div>
-            <div class="hero-img-col">
-              <img src="assets/dr-muduly-hero-odisha-mission.jpg" alt="Odisha cancer mission and outreach" class="hero-img">
-            </div>
-          </div>
-        </article>
+        <div class="exp-card reveal"><div class="exp-icon">🎗️</div><div class="exp-name">Breast Oncology</div><div class="exp-desc">Comprehensive management of all stages of breast cancer — breast conservation, oncoplastic surgery, sentinel node biopsy, and MDT-guided decision making.</div><div class="exp-tags"><span class="exp-tag">Breast Conservation</span><span class="exp-tag">Sentinel Node</span><span class="exp-tag">Neoadjuvant Therapy</span></div></div>
 
-        <!-- Slide 5 -->
-        <article class="hero-slide" data-index="4">
-          <div class="hero-inner">
-            <div>
-              <h1>
-                Every Patient is a Person<br>
-                <span>Not Just a Case Number</span>
-              </h1>
-              <p class="hero-subtitle">
-                Transparent counselling, shared decision-making, and emotional support through every stage of the cancer journey.
-              </p>
-              <div class="hero-cta-row">
-                <a href="#contact" class="btn btn-primary">Book Appointment</a>
-                <a href="#stories" class="btn btn-outline">Patient Stories</a>
-              </div>
-            </div>
-            <div class="hero-img-col">
-              <img src="assets/dr-muduly-hero-patient-care.jpg" alt="Patient counselling and care" class="hero-img">
-            </div>
-          </div>
-        </article>
+        <div class="exp-card reveal"><div class="exp-icon">🩺</div><div class="exp-name">Gynaecologic Oncology</div><div class="exp-desc">Surgical management of ovarian, endometrial, and cervical malignancies — including cytoreductive surgery, staging procedures, and adjuvant treatment coordination.</div><div class="exp-tags"><span class="exp-tag">Ovarian Cancer</span><span class="exp-tag">Endometrial Cancer</span><span class="exp-tag">Cytoreduction</span></div></div>
 
-        <!-- Slide 6 -->
-        <article class="hero-slide" data-index="5">
-          <div class="hero-inner">
-            <div>
-              <h1>
-                Dr Muduly’s Cancer Care<br>
-                <span>Evidence-Based. Ethical. Accessible.</span>
-              </h1>
-              <p class="hero-subtitle">
-                Private consultations focused on time, trust, clarity, and personalised treatment planning.
-              </p>
-              <div class="hero-cta-row">
-                <a href="#contact" class="btn btn-primary">Book Appointment</a>
-                <a href="#contact" class="btn btn-outline">Clinic Details</a>
-              </div>
-            </div>
-            <div class="hero-img-col">
-              <img src="assets/dr-muduly-hero-clinic-vision.jpg" alt="Clinic vision and private practice" class="hero-img">
-            </div>
-          </div>
-        </article>
+        <div class="exp-card reveal"><div class="exp-icon">🫀</div><div class="exp-name">Gastric Cancer</div><div class="exp-desc">High-volume gastrectomy with D2 lymphadenectomy, perioperative FLOT chemotherapy, and laparoscopic approaches for optimal oncologic and functional outcomes.</div><div class="exp-tags"><span class="exp-tag">Total Gastrectomy</span><span class="exp-tag">D2 Dissection</span><span class="exp-tag">FLOT Protocol</span></div></div>
 
-        <!-- Slide 7 -->
-        <article class="hero-slide" data-index="6">
-          <div class="hero-inner">
-            <div>
-              <h1>
-                Transforming Cancer Care in Eastern India<br>
-                <span>Through Care, Research &amp; Innovation</span>
-              </h1>
-              <p class="hero-subtitle">
-                Integrating clinical excellence, digital oncology, and collaborative research to build future-ready cancer care.
-              </p>
-              <div class="hero-cta-row">
-                <a href="#collab" class="btn btn-primary">Collaborations</a>
-                <a href="#journey" class="btn btn-outline">Professional Journey</a>
-              </div>
-            </div>
-            <div class="hero-img-col">
-              <img src="assets/dr-muduly-hero-future-vision.jpg" alt="Future vision for cancer care" class="hero-img">
-            </div>
-          </div>
-        </article>
+        <div class="exp-card reveal"><div class="exp-icon">🔴</div><div class="exp-name">Esophageal Cancer</div><div class="exp-desc">Ivor Lewis and transhiatal oesophagectomy, minimally invasive oesophagectomy (MIO), and multimodal treatment integration for carcinoma oesophagus.</div><div class="exp-tags"><span class="exp-tag">Ivor Lewis</span><span class="exp-tag">MIO</span><span class="exp-tag">Chemoradiation</span></div></div>
+
+        <div class="exp-card reveal"><div class="exp-icon">🦋</div><div class="exp-name">Head &amp; Neck / Thyroid</div><div class="exp-desc">Differentiated and medullary thyroid cancers, head and neck malignancies — total thyroidectomy, neck dissection, and RET mutation surveillance protocols.</div><div class="exp-tags"><span class="exp-tag">Total Thyroidectomy</span><span class="exp-tag">Neck Dissection</span><span class="exp-tag">Medullary Ca / RET</span></div></div>
+
+        <div class="exp-card reveal"><div class="exp-icon">🫁</div><div class="exp-name">Thoracic Cancers</div><div class="exp-desc">Surgical management of lung, pleural, and mediastinal malignancies — VATS and open resections with emphasis on lung-sparing and functional preservation.</div><div class="exp-tags"><span class="exp-tag">Lung Resections</span><span class="exp-tag">VATS</span><span class="exp-tag">Mediastinal Tumours</span></div></div>
+
+        <div class="exp-card reveal"><div class="exp-icon">🧬</div><div class="exp-name">GI &amp; Hepatobiliary</div><div class="exp-desc">Colorectal, liver, pancreatic, gallbladder, and biliary malignancies — major resections, ablation, and palliative surgery within multidisciplinary frameworks.</div><div class="exp-tags"><span class="exp-tag">Colorectal Cancer</span><span class="exp-tag">Hepatic Resection</span><span class="exp-tag">Pancreatic Surgery</span></div></div>
+
+        <div class="exp-card reveal"><div class="exp-icon">🫘</div><div class="exp-name">Genitourinary Malignancies</div><div class="exp-desc">Surgical oncology for kidney, bladder, and prostate cancers — radical nephrectomy, cystectomy, and minimally invasive approaches with oncologic intent.</div><div class="exp-tags"><span class="exp-tag">Renal Cell Carcinoma</span><span class="exp-tag">Bladder Cancer</span><span class="exp-tag">Radical Surgery</span></div></div>
+
+        <div class="exp-card reveal"><div class="exp-icon">🦴</div><div class="exp-name">Bone &amp; Soft Tissue Tumours</div><div class="exp-desc">Primary bone tumours and soft tissue sarcomas — limb-salvage surgery, wide local excision, and reconstruction with multidisciplinary oncologic planning.</div><div class="exp-tags"><span class="exp-tag">Limb Salvage</span><span class="exp-tag">Sarcoma</span><span class="exp-tag">Wide Excision</span></div></div>
+
+        <div class="exp-card reveal"><div class="exp-icon">💊</div><div class="exp-name">Perioperative Cancer Care</div><div class="exp-desc">Neoadjuvant chemotherapy integration, structured prehabilitation, and ERAS-based post-operative recovery for superior surgical outcomes and quality of life.</div><div class="exp-tags"><span class="exp-tag">Prehabilitation</span><span class="exp-tag">NACT</span><span class="exp-tag">ERAS Protocols</span></div></div>
+
+        <div class="exp-card reveal"><div class="exp-icon">🤝</div><div class="exp-name">Second Opinion &amp; MDT</div><div class="exp-desc">Structured second opinion consultations — tumour board review, personalised treatment pathway planning, and clear communication to patients and referring doctors.</div><div class="exp-tags"><span class="exp-tag">Tumour Board</span><span class="exp-tag">Complex Cases</span><span class="exp-tag">Treatment Planning</span></div></div>
+
+        <div class="exp-card reveal"><div class="exp-icon">💻</div><div class="exp-name">Digital Oncology</div><div class="exp-desc">Pioneering AI-assisted surgical documentation, operative note digitisation using OCR + LLM, and digital cancer care pathway tools for Odisha and Eastern India.</div><div class="exp-tags"><span class="exp-tag">AI Documentation</span><span class="exp-tag">OCR + LLM</span><span class="exp-tag">Digital Pathways</span></div></div>
+
+        <div class="exp-card reveal"><div class="exp-icon">🔭</div><div class="exp-name">Research &amp; Innovation</div><div class="exp-desc">170+ peer-reviewed publications, active clinical trials, and translational research — mRNA vaccine trials in TNBC and molecular classification of endometrial cancer.</div><div class="exp-tags"><span class="exp-tag">Clinical Trials</span><span class="exp-tag">mRNA Vaccines</span><span class="exp-tag">Translational Research</span></div></div>
 
       </div>
-
-      <!-- Dots -->
-      <div class="hero-dots" role="tablist" aria-label="Hero slide selector" id="heroDots">
-        <button type="button" class="hero-dot is-active" aria-label="Slide 1" onclick="heroGoTo(0)"></button>
-        <button type="button" class="hero-dot" aria-label="Slide 2" onclick="heroGoTo(1)"></button>
-        <button type="button" class="hero-dot" aria-label="Slide 3" onclick="heroGoTo(2)"></button>
-        <button type="button" class="hero-dot" aria-label="Slide 4" onclick="heroGoTo(3)"></button>
-        <button type="button" class="hero-dot" aria-label="Slide 5" onclick="heroGoTo(4)"></button>
-        <button type="button" class="hero-dot" aria-label="Slide 6" onclick="heroGoTo(5)"></button>
-        <button type="button" class="hero-dot" aria-label="Slide 7" onclick="heroGoTo(6)"></button>
-      </div>
-
     </div>
   </div>
 </section>
 
-
-    <!-- Professional Journey -->
-    <section id="journey" style="background:#f0fdfa;">
-      <div class="container fade-in">
-        <h2 class="section-title">Professional Journey</h2>
-        <p class="section-subtitle">Key milestones in clinical practice, academics, and leadership in surgical oncology.</p>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-year">1998–2004</div>
-              <h3>MBBS</h3>
-              <p>MKCG Medical College, Berhampur, Odisha<br>Built strong clinical foundation serving diverse patients in Eastern India.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-year">2006–2012</div>
-              <h3>MS (General Surgery) & MCh (Surgical Oncology)</h3>
-              <p>AIIMS New Delhi<br>Advanced training in complex oncologic surgeries and multidisciplinary tumour boards.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-year">2012–2023</div>
-              <h3>Faculty & Clinical Practice</h3>
-              <p>11 years at AIIMS New Delhi followed by faculty at AIIMS Bhubaneswar<br>High-volume surgical oncology practice and resident mentorship.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-year">2023–Present</div>
-              <h3>Professor & Head</h3>
-              <p>Department of Surgical Oncology, AIIMS Bhubaneswar<br>Leadership in department building, guideline development, and state cancer initiatives.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-year">Ongoing</div>
-              <h3>Dr Muduly’s Cancer Care</h3>
-              <p>Private practice focused on patient-centric, evidence-based oncology in Odisha<br>Integrating digital tools (EBO database) and awareness programs.</p>
-            </div>
-          </div>
-        </div>
+<!-- ════════════════ JOURNEY ════════════════ -->
+<section id="journey" class="sec-light">
+  <div class="wrap">
+    <div class="sec-lbl lt">Career</div>
+    <h2 class="sec-title lt">Professional Journey</h2>
+    <div class="rule"></div>
+    <div class="journey-grid">
+      <div class="timeline">
+        <div class="tl reveal"><div class="tl-dot"></div><div class="tl-yr">1996 – 2002</div><div class="tl-ttl">MBBS</div><div class="tl-org">MKCG Medical College, Berhampur, Odisha</div><div class="tl-dsc">Built a strong clinical foundation serving diverse patient populations across Eastern India.</div></div>
+        <div class="tl reveal"><div class="tl-dot"></div><div class="tl-yr">2004 – 2006</div><div class="tl-ttl">MS (General Surgery) </div><div class="tl-org">AIIMS New Delhi</div><div class="tl-dsc">Learnt General Surgery At Department of Surgical Disciplines at India's premier institution.</div></div>
+	<div class="tl reveal"><div class="tl-dot"></div><div class="tl-yr">2007 – 2010</div><div class="tl-ttl">Senior Resident (Surgical Oncology)</div><div class="tl-org">AIIMS New Delhi</div><div class="tl-dsc">Advanced training in complex oncologic surgeries and multidisciplinary tumour board protocols at India's premier institution.</div></div>
+	<div class="tl reveal"><div class="tl-dot"></div><div class="tl-yr">2010 – 2012</div><div class="tl-ttl">Senior Research Associate (Surgical Oncology)</div><div class="tl-org">AIIMS New Delhi under CSIR, Govt of India</div><div class="tl-dsc">Advanced training in complex oncologic surgeries and multidisciplinary tumour board protocols at India's premier institution.</div></div>
+	<div class="tl reveal"><div class="tl-dot"></div><div class="tl-yr">2012 – 2015</div><div class="tl-ttl">MCh (Surgical Oncology)</div><div class="tl-org">AIIMS New Delhi</div><div class="tl-dsc">Advanced training in complex oncologic surgeries and multidisciplinary tumour board protocols at India's premier institution.</div></div>
+        <div class="tl reveal"><div class="tl-dot"></div><div class="tl-yr">2016 – 2019</div><div class="tl-ttl">Associate Professor, Surgical Oncology</div><div class="tl-org">AIIMS, Bhubaneswar</div><div class="tl-dsc">11 years at AIIMS New Delhi, culminating as Professor &amp; Head at AIIMS Bhubaneswar — building the department, shaping curriculum, and leading state cancer initiatives.</div></div>
+	<div class="tl reveal"><div class="tl-dot"></div><div class="tl-yr">2019 – 2023</div><div class="tl-ttl">Additional Professor, Surgical Oncology</div><div class="tl-org">AIIMS, Bhubaneswar</div><div class="tl-dsc">11 years at AIIMS New Delhi, culminating as Professor &amp; Head at AIIMS Bhubaneswar — building the department, shaping curriculum, and leading state cancer initiatives.</div></div>
+	<div class="tl reveal"><div class="tl-dot"></div><div class="tl-yr">2023 – 2025</div><div class="tl-ttl">Professor &amp; Head, Surgical Oncology</div><div class="tl-org">AIIMS, Bhubaneswar</div><div class="tl-dsc">11 years at AIIMS New Delhi, culminating as Professor &amp; Head at AIIMS Bhubaneswar — building the department, shaping curriculum, and leading state cancer initiatives.</div></div>
+        <div class="tl reveal"><div class="tl-dot now"></div><div class="tl-yr">2025 – Present</div><div class="tl-ttl">Senior Consultant, Surgical Oncology</div><div class="tl-org">Utkal Hospital, Bhubaneswar</div><div class="tl-dsc">High-volume practice in breast, GI, thoracic, and thyroid oncology — evidence-based, patient-first care in Odisha.</div></div>
+        <div class="tl reveal"><div class="tl-dot"></div><div class="tl-yr">Ongoing</div><div class="tl-ttl">Dr Muduly's Cancer Care</div><div class="tl-org">Private Practice · Bhubaneswar</div><div class="tl-dsc">Digital oncology, Ātmashakti bilingual patient education series, and community outreach across Odisha.</div></div>
       </div>
-    </section>
-
-    <!-- Patient Education Resources -->
-    <section id="education" style="background:#ffffff;">
-      <div class="container fade-in">
-        <h2 class="section-title">Patient Education Resources</h2>
-        <p class="section-subtitle">Empowering patients with reliable information on cancer prevention, early detection, and living with cancer.</p>
-        <div class="grid-3">
-          <div class="card" style="text-align:center;">
-            <div style="font-size:3.5rem; margin-bottom:1rem;">🔍</div>
-            <h3>Early Detection</h3>
-            <p>Warning signs of common cancers and importance of regular screening.</p>
-            <a href="#" class="btn btn-outline" style="margin-top:1rem;">Read More →</a>
-          </div>
-          <div class="card" style="text-align:center;">
-            <div style="font-size:3.5rem; margin-bottom:1rem;">🥗</div>
-            <h3>Prevention & Lifestyle</h3>
-            <p>Tobacco cessation, diet, exercise, and vaccinations to reduce risk.</p>
-            <a href="#" class="btn btn-outline" style="margin-top:1rem;">Read More →</a>
-          </div>
-          <div class="card" style="text-align:center;">
-            <div style="font-size:3.5rem; margin-bottom:1rem;">❤️</div>
-            <h3>Support During Treatment</h3>
-            <p>Managing side effects, nutrition, emotional health, and survivorship.</p>
-            <a href="#" class="btn btn-outline" style="margin-top:1rem;">Read More →</a>
-          </div>
-        </div>
+      <div class="roles-panel reveal">
+        <div class="sec-lbl lt" style="margin-bottom:16px">Leadership &amp; Roles</div>
+        <div class="role-item"><div class="role-badge">Current — President</div><div class="role-title">Association of Surgical Oncologists of Odisha (ASOO)</div><div class="role-org">Odisha State Chapter</div></div>
+        <div class="role-item"><div class="role-badge">Executive Committee</div><div class="role-title">Indian Association of Surgical Oncology (IASO)</div><div class="role-org">National Level</div></div>
+        <div class="role-item"><div class="role-badge">Executive Committee</div><div class="role-title">Association of Breast Surgeons of India (ABSI)</div><div class="role-org">National Level</div></div>
+        <div class="role-item"><div class="role-badge">🏅 Organising Chairman</div><div class="role-title"> IASO MIDCON Puri 2024</div><div class="role-org">Feb 07–08 2024 · Bhubaneswar</div></div>
+        <div class="role-item"><div class="role-badge">🏅 Organising Chairman</div><div class="role-title">ASOOCON 2026</div><div class="role-org">April 25–26, 2026 · Bhubaneswar</div></div>
       </div>
-    </section>
-
-    <!-- Research Profile -->
-    <section id="research" style="background:#f0fdfa;">
-      <div class="container fade-in">
-        <h2 class="section-title">Research Profile</h2>
-        <p class="section-subtitle">170+ peer-reviewed publications focusing on breast conservation, gastric cancer outcomes, and regional data from Eastern India.</p>
-        <div class="card" style="text-align:center; max-width:800px; margin:0 auto;">
-          <p style="margin-bottom:1rem;">Primary research profile (regularly updated):</p>
-          <div class="profile-links" style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content:center;">
-            <a href="https://www.researchgate.net/profile/Dillip-Muduly" target="_blank" class="btn btn-primary">
-              ResearchGate (170+ Publications)
-            </a>
-            <a href="https://scholar.google.com/scholar?q=author:%22Dillip+Kumar+Muduly%22+OR+author:%22DK+Muduly%22" target="_blank" class="btn btn-outline">
-              Search on Google Scholar
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<!-- Collaborative Research Projects -->
-<section id="collab" style="background:#ffffff;">
-  <div class="container fade-in">
-    <h2 class="section-title">Collaborative Research Projects</h2>
-    <p class="section-subtitle">
-      Ongoing and planned collaborations with leading institutes in basic science, engineering, and translational oncology.
-      Click an institute to view the project/study details.
-    </p>
-
-    <div class="card" style="text-align:center; max-width:900px; margin:0 auto;">
-      <p style="margin-bottom:1rem;">Select an institute:</p>
-
-      <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; margin-top:1.2rem;">
-        <a href="collaborations/ils.html" class="btn btn-primary">Institute of Life Sciences (ILS), Bhubaneswar</a>
-        <a href="collaborations/niser.html" class="btn btn-outline">NISER, Bhubaneswar</a>
-        <a href="collaborations/iiser.html" class="btn btn-outline">IISER, Bhubaneswar</a>
-        <a href="collaborations/iiit.html" class="btn btn-outline">IIIT, Bhubaneswar</a>
-        <a href="collaborations/birmingham.html" class="btn btn-outline">University of Birmingham, UK</a>
-      </div>
-
-      <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--text-light);">
-        (You can add more institutes anytime by adding one more button + creating the matching HTML file.)
-      </p>
     </div>
   </div>
 </section>
 
-    <!-- Cancer Awareness & Media -->
-    <section id="media" style="background:#ffffff;">
-      <div class="container fade-in">
-        <h2 class="section-title">Cancer Awareness & Media</h2>
-        <p class="section-subtitle">Educational talks, interviews, and public initiatives (content added regularly).</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-          <div class="card">
-            <div style="background:#e2e8f0; height:250px; border-radius:var(--radius-sm); display:flex; align-items:center; justify-content:center; color:var(--text-light);">
-              Placeholder for Video
-            </div>
-            <h4 style="margin-top:1rem;">Breast Cancer Awareness</h4>
-          </div>
-          <div class="card">
-            <div style="background:#e2e8f0; height:250px; border-radius:var(--radius-sm); display:flex; align-items:center; justify-content:center; color:var(--text-light);">
-              Placeholder for Video
-            </div>
-            <h4 style="margin-top:1rem;">Early Detection & Prevention</h4>
-          </div>
-          <div class="card">
-            <p style="text-align:center; padding:4rem 0; color:var(--text-light);">More content coming soon...</p>
-          </div>
+<!-- ════════════════ AWARDS ════════════════ -->
+<section id="awards" class="sec-awards">
+  <div class="wrap">
+    <div class="sec-lbl lt">Recognition</div>
+    <h2 class="sec-title lt">Awards &amp; Fellowships</h2>
+    <p class="sec-sub lt">International and national recognition spanning clinical excellence, academic achievement, and surgical leadership.</p>
+    <div class="rule"></div>
+    <div class="awards-grid">
+      <div class="award-card reveal"><div class="award-ico">🥇</div><div><div class="award-type">Gold Medal</div><div class="award-name">Pfizer Gold Medal in General Surgery</div><div class="award-body">ASI (Orissa) &amp; Pfizer — Highest Marks in the University</div><div class="award-date">August 2002</div></div></div>
+      <div class="award-card reveal"><div class="award-ico">🏆</div><div><div class="award-type">Appreciation Award</div><div class="award-name">South Orissa Surgical Society Award</div><div class="award-body">South Orissa Surgical Society — Highest marks in Surgery in university</div><div class="award-date">01 August 2003</div></div></div>
+      <div class="award-card reveal"><div class="award-ico">✈️</div><div><div class="award-type">International Travel Fellowship</div><div class="award-name">ECCO Travel Fellowship Grant</div><div class="award-body">European Cancer Organisation — 8th European Breast Cancer Conference, Vienna, Austria</div><div class="award-date">21 March 2012</div></div></div>
+      <div class="award-card reveal"><div class="award-ico">🌍</div><div><div class="award-type">International Travel Fellowship</div><div class="award-name">ESMO Travel Fellowship Award</div><div class="award-body">European Society of Medical Oncology — 14th World Congress on GI Cancer, Barcelona, Spain</div><div class="award-date">28 June 2012</div></div></div>
+      <div class="award-card reveal"><div class="award-ico">🎓</div><div><div class="award-type">International Fellowship</div><div class="award-name">ESSO Travelling Fellowship</div><div class="award-body">European Society of Surgical Oncology — 32nd Congress, Valencia, Spain</div><div class="award-date">19 September 2012</div></div></div>
+      <div class="award-card reveal"><div class="award-ico">🔬</div><div><div class="award-type">Research Award</div><div class="award-name">Young Researcher Award</div><div class="award-body">Japanese Surgical Society (JSS) — Fukuoka, Japan</div><div class="award-date">11 April 2013</div></div></div>
+      <div class="award-card reveal"><div class="award-ico">🇮🇹</div><div><div class="award-type">Travel Grant</div><div class="award-name">ESO Travel Grant</div><div class="award-body">European School of Oncology — Rome, Italy</div><div class="award-date">28 November 2014</div></div></div>
+      <div class="award-card reveal"><div class="award-ico">🌐</div><div><div class="award-type">Technical Fellowship</div><div class="award-name">UICC Technical Fellowship Award</div><div class="award-body">UICC, Geneva — National Cancer Institute, Milan, Italy</div><div class="award-date">01 May 2019</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ RESEARCH ════════════════ -->
+<section id="research" class="sec-white">
+  <div class="wrap">
+    <div class="sec-lbl lt">Academic Output</div>
+    <h2 class="sec-title lt">Research Profile</h2>
+    <div class="rule"></div>
+    <div class="research-split">
+      <div class="reveal">
+        <div class="r-stat">170+</div>
+        <div class="r-stat-lbl">Peer-reviewed publications in indexed journals</div>
+        <div class="r-desc">Breast conservation outcomes, gastric cancer resections, thoracic malignancies, and regional cancer epidemiology from Eastern India — shaping evidence for South Asian oncology practice.</div>
+        <div class="r-links">
+          <a href="https://www.researchgate.net/profile/Dillip-Muduly" target="_blank" class="r-link">📄 ResearchGate</a>
+          <a href="https://scholar.google.com/scholar?q=author:%22Dillip+Kumar+Muduly%22" target="_blank" class="r-link">🎓 Google Scholar</a>
         </div>
       </div>
-    </section>
-
-    <!-- Patient Stories (Anonymized - Ethical) -->
-    <section id="stories" style="background:#f0fdfa;">
-      <div class="container fade-in">
-        <h2 class="section-title">Patient Stories (Anonymized)</h2>
-        <p class="section-subtitle">Educational, anonymized examples highlighting care approach and outcomes (fully compliant with ethics).</p>
-        <div class="grid-3">
-          <div class="card story-card">
-            <p class="story-quote">"The compassionate approach and clear explanation helped me face treatment with confidence."</p>
-            <p class="story-note">— Anonymized breast cancer patient</p>
-          </div>
-          <div class="card story-card">
-            <p class="story-quote">"Organ preservation surgery gave me hope for normal life after diagnosis."</p>
-            <p class="story-note">— Anonymized GI cancer patient</p>
-          </div>
-          <div class="card story-card">
-            <p class="story-quote">"Multidisciplinary care and support made the journey less frightening."</p>
-            <p class="story-note">— Anonymized patient family member</p>
-          </div>
-        </div>
-        <p style="text-align:center; margin-top:2rem; font-size:0.9rem; color:var(--text-light);">
-          <strong>Note:</strong> Direct testimonials prohibited by NMC guidelines. These are anonymized educational examples.
-        </p>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section id="gallery" style="background:#ffffff;">
-      <div class="container fade-in">
-        <h2 class="section-title">Gallery</h2>
-        <p class="section-subtitle">Moments from cancer awareness programs, academic conferences, screening camps, and professional activities in Odisha.</p>
-        <div class="gallery-container">
-          <button class="gallery-arrow left" onclick="scrollGallery(-400)">←</button>
-          <div class="gallery-scroll" id="galleryScroll">
-            <div class="gallery-images">
-              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Cancer+Awareness+Camp', 'Cancer Awareness Camp - Community education session on early detection')">
-                <img src="https://via.placeholder.com/500x320?text=Cancer+Awareness+Camp" alt="Cancer Awareness Camp">
-                <p class="gallery-caption">Cancer Awareness Camp</p>
-              </div>
-              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Conference', 'National Conference - Invited talk on breast conservation')">
-                <img src="https://via.placeholder.com/500x320?text=Conference" alt="Conference">
-                <p class="gallery-caption">Conference Presentation</p>
-              </div>
-              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Screening', 'Free Screening Program - Breast & cervical cancer screening')">
-                <img src="https://via.placeholder.com/500x320?text=Screening+Program" alt="Screening Program">
-                <p class="gallery-caption">Screening Program</p>
-              </div>
-              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Academic', 'Academic Session with residents')">
-                <img src="https://via.placeholder.com/500x320?text=Academic+Session" alt="Academic Session">
-                <p class="gallery-caption">Academic Session</p>
-              </div>
-              <div class="gallery-item" onclick="openModal('https://via.placeholder.com/800x600?text=Team', 'Team AIIMS Bhubaneswar')">
-                <img src="https://via.placeholder.com/500x320?text=Team+Photo" alt="Team Photo">
-                <p class="gallery-caption">Team Photo</p>
-              </div>
-            </div>
-          </div>
-          <button class="gallery-arrow right" onclick="scrollGallery(400)">→</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" style="background:#f0fdfa;">
-      <div class="container fade-in">
-        <h2 class="section-title">Book an Appointment</h2>
-        <p class="section-subtitle">Private practice consultations by prior appointment only.</p>
-        <div class="grid-2">
-          <div class="card">
-            <h3 style="margin-bottom:1.5rem;">Clinic Details</h3>
-            <p><strong>Address:</strong> [Your Private Clinic Address, Bhubaneswar]</p>
-            <p style="margin:1rem 0;"><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Message Now</a></p>
-            <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--text-light);">
-              For AIIMS Bhubaneswar OPD, please use the official hospital portal.
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="margin-bottom:1.5rem;">Appointment Request</h3>
-            <form id="appointmentForm" action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="POST">
-              <div style="margin-bottom:1.2rem;">
-                <label>Full Name *</label>
-                <input type="text" name="name" required style="width:100%; padding:0.9rem; border-radius:var(--radius-sm); border:1px solid var(--border-soft);" />
-              </div>
-              <div style="margin-bottom:1.2rem;">
-                <label>Mobile Number *</label>
-                <input type="tel" name="phone" required style="width:100%; padding:0.9rem; border-radius:var(--radius-sm); border:1px solid var(--border-soft);" />
-              </div>
-              <div style="margin-bottom:1.2rem;">
-                <label>Reason for Consultation *</label>
-                <select name="reason" required style="width:100%; padding:0.9rem; border-radius:var(--radius-sm); border:1px solid var(--border-soft);">
-                  <option value="">Select</option>
-                  <option>Breast Cancer/Concern</option>
-                  <option>GI/Hepatobiliary Cancer</option>
-                  <option>Second Opinion</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div style="margin-bottom:1.2rem;">
-                <label>Brief Message</label>
-                <textarea name="message" rows="4" style="width:100%; padding:0.9rem; border-radius:var(--radius-sm); border:1px solid var(--border-soft);"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width:100%;">Submit Request</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>© <span id="year"></span> Dr. Dillip Kumar Muduly. All rights reserved.</p>
-        <p style="margin-top:0.8rem; font-style:italic;">मा कश्चित् दुःखमाप्नुयात् | May no one suffer</p>
-      </div>
-    </footer>
-
-    <!-- Gallery Modal -->
-    <div id="galleryModal" class="modal">
-      <span class="close-modal" onclick="closeModal()">×</span>
-      <div class="modal-content">
-        <img id="modalImage" src="" alt="">
-        <p id="modalCaption" class="modal-caption"></p>
+      <div class="reveal">
+        <div class="r-box"><div class="r-box-lbl">Research Focus Areas</div><div class="r-box-val">Breast Conservation · Oncoplastic Surgery · Gastric Cancer · Thoracic Oncology · Regional Cancer Epidemiology (Eastern India) · Oncotype DX in Indian populations</div></div>
+        <div class="r-box"><div class="r-box-lbl">Active Collaborators</div><div class="r-box-val">ILS Bhubaneswar · NISER · IISER · IIIT Bhubaneswar · University of Birmingham, UK</div></div>
+        <div class="r-box"><div class="r-box-lbl">Current Protocol</div><div class="r-box-val">Out-of-pocket expenses in breast cancer patients under AB-PMJAY — IEC approved, ongoing</div></div>
       </div>
     </div>
   </div>
+</section>
 
-  <script>
-    function toggleNav() {
-      document.getElementById("navLinks").classList.toggle("open");
+<!-- ════════════════ COLLABORATIONS ════════════════ -->
+<section id="collab" class="sec-collab">
+  <div class="wrap">
+    <div class="sec-lbl lt">Partnerships</div>
+    <h2 class="sec-title lt">Collaborative Research</h2>
+    <p class="sec-sub lt">Ongoing projects with premier science, engineering, and international institutions.</p>
+    <div class="rule"></div>
+    <div class="collab-tabs">
+      <button class="c-tab on" onclick="showCollab('ils',this)">ILS Bhubaneswar</button>
+      <button class="c-tab" onclick="showCollab('niser',this)">NISER</button>
+      <button class="c-tab" onclick="showCollab('iiser',this)">IISER</button>
+      <button class="c-tab" onclick="showCollab('iiit',this)">IIIT Bhubaneswar</button>
+      <button class="c-tab" onclick="showCollab('bham',this)">University of Birmingham, UK</button>
+    </div>
+    <div id="c-ils" class="c-panel on"><div class="c-box"><div class="c-title">Institute of Life Sciences (ILS), Bhubaneswar</div><div class="c-desc">Translational oncology research focusing on tumour biology, biomarker discovery, and molecular profiling of breast and GI cancers in Eastern India.</div></div></div>
+    <div id="c-niser" class="c-panel"><div class="c-box"><div class="c-title">NISER, Bhubaneswar</div><div class="c-desc">Collaborative projects in biophysics and cancer cell mechanics, exploring novel therapeutic targets and diagnostic imaging approaches.</div></div></div>
+    <div id="c-iiser" class="c-panel"><div class="c-box"><div class="c-title">IISER, Bhubaneswar</div><div class="c-desc">Joint research in chemical biology and drug delivery systems for improved oncologic treatment efficacy and reduced systemic toxicity.</div></div></div>
+    <div id="c-iiit" class="c-panel"><div class="c-box"><div class="c-title">IIIT, Bhubaneswar</div><div class="c-desc">Digital oncology — surgical note digitisation (OCR + AI), operative workflow documentation, and AI-assisted cancer care pathways.</div></div></div>
+    <div id="c-bham" class="c-panel"><div class="c-box"><div class="c-title">University of Birmingham, UK</div><div class="c-desc">International collaboration in breast oncology outcomes research and cross-continental surgical practice benchmarking.</div></div></div>
+  </div>
+</section>
+
+<!-- ════════════════ VIDEOS ════════════════ -->
+<section id="media" class="sec-light">
+  <div class="wrap">
+    <div class="sec-lbl lt">Awareness &amp; Education</div>
+    <h2 class="sec-title lt">Cancer Awareness &amp; Media</h2>
+    <p class="sec-sub lt">Add videos by editing <code style="background:rgba(14,116,144,.1);padding:2px 7px;border-radius:3px;font-size:.85em;color:var(--teal)">assets/media-config.js</code> with your YouTube or Vimeo IDs.</p>
+    <div class="rule"></div>
+    <div class="media-filter" id="vf">
+      <button class="m-tab on" data-cat="all">All Videos</button>
+      <button class="m-tab" data-cat="breast">Breast Cancer</button>
+      <button class="m-tab" data-cat="earlydetection">Early Detection</button>
+      <button class="m-tab" data-cat="odia">Odia Content</button>
+      <button class="m-tab" data-cat="gi">GI Cancer</button>
+      <button class="m-tab" data-cat="general">General</button>
+    </div>
+    <div class="videos-grid" id="vg"></div>
+  </div>
+</section>
+
+<!-- ════════════════ GALLERY ════════════════ -->
+<section id="gallery" class="sec-dark">
+  <div class="wrap">
+    <div class="sec-lbl">Gallery</div>
+    <h2 class="sec-title dk">Moments &amp; Milestones</h2>
+    <p class="sec-sub dk" style="margin-bottom:10px">Upload photos to <code style="color:var(--gold-lt);background:rgba(184,134,11,.1);padding:2px 7px;border-radius:3px;font-size:.84em">assets/gallery/</code> using the naming system, then update counts in <code style="color:var(--gold-lt);background:rgba(184,134,11,.1);padding:2px 7px;border-radius:3px;font-size:.84em">assets/media-config.js</code>.</p>
+    <div class="rule"></div>
+    <div class="gal-filter" id="gf">
+      <button class="g-tab on" data-cat="all">All Photos</button>
+      <button class="g-tab" data-cat="conference">Conferences</button>
+      <button class="g-tab" data-cat="cme">CME &amp; Workshops</button>
+      <button class="g-tab" data-cat="camp">Awareness Camps</button>
+      <button class="g-tab" data-cat="screening">Screening</button>
+      <button class="g-tab" data-cat="team">Team</button>
+      <button class="g-tab" data-cat="award">Awards</button>
+      <button class="g-tab" data-cat="lecture">Lectures</button>
+      <button class="g-tab" data-cat="surgery">Clinical</button>
+    </div>
+    <div class="gal-grid" id="gg"></div>
+  </div>
+</section>
+
+<!-- ════════════════ PATIENT STORIES ════════════════ -->
+<section id="stories" class="sec-stories">
+  <div class="wrap">
+    <div class="sec-lbl lt">Patient Perspectives</div>
+    <h2 class="sec-title lt">Patient Stories</h2>
+    <p class="sec-sub lt">Anonymised educational examples — not testimonials. In full compliance with NMC guidelines.</p>
+    <div class="rule"></div>
+    <div class="stories-grid">
+      <div class="story reveal"><div class="story-q">"The compassionate approach and clear explanation helped me face treatment with confidence."</div><div class="story-attr">— Anonymised breast cancer patient</div></div>
+      <div class="story reveal"><div class="story-q">"Organ preservation surgery gave me hope for a normal life after my diagnosis."</div><div class="story-attr">— Anonymised GI cancer patient</div></div>
+      <div class="story reveal"><div class="story-q">"Multidisciplinary care and emotional support made the cancer journey far less frightening."</div><div class="story-attr">— Anonymised patient family member</div></div>
+    </div>
+    <p style="font-size:.72rem;color:var(--tx-mid);margin-top:24px;border-top:1px solid rgba(184,134,11,.15);padding-top:14px">⚖️ Direct patient testimonials not displayed per NMC Regulations on Advertisement. These are anonymised educational case illustrations only.</p>
+  </div>
+</section>
+
+<!-- ════════════════ CONTACT ════════════════ -->
+<section id="contact" class="sec-dark">
+  <div class="wrap">
+    <div class="sec-lbl">Appointments</div>
+    <h2 class="sec-title dk">Request an Appointment</h2>
+    <p class="sec-sub dk">Share your details and preferred schedule. Our team will contact you to confirm the appointment.</p>
+    <div class="rule"></div>
+    <div class="contact-grid">
+      <div>
+        <div class="ci"><div class="ci-ico">📍</div><div><div class="ci-lbl">Address</div><div class="ci-val" id="cl-addr">Utkal Hospital, Bhubaneswar, Odisha</div></div></div>
+        <div class="ci"><div class="ci-ico">📞</div><div><div class="ci-lbl">Phone</div><div class="ci-val"><a id="cl-ph" href="#">Update in media-config.js</a></div></div></div>
+        <div class="ci"><div class="ci-ico">💬</div><div><div class="ci-lbl">WhatsApp</div><div class="ci-val"><a id="cl-wa" href="#">Message on WhatsApp</a></div></div></div>
+        <div class="ci"><div class="ci-ico">🏥</div><div><div class="ci-lbl">OPD</div><div class="ci-val" style="font-size:.8rem;color:var(--dk-dim)">For OPD, use the official hospital portal.</div></div></div>
+        </div>
+      <div>
+
+        <!-- Reassurance intro -->
+        <div style="margin-bottom:20px;padding:14px 18px;background:rgba(14,116,144,.18);border-left:3px solid var(--teal-lt);border-radius:0 8px 8px 0;">
+          <p style="font-size:.92rem;color:rgba(255,255,255,.9);line-height:1.65;">Share your details and preferred schedule. Our team will contact you to confirm the appointment.<br><span style="font-size:.8rem;opacity:.75;">Scheduling only — not for emergency or urgent medical advice.</span></p>
+        </div>
+
+        <!-- Essential fields -->
+        <div class="form-section-lbl">Essential</div>
+
+        <div class="form-row">
+          <div class="ff">
+            <label for="f-name">Full Name *</label>
+            <input type="text" id="f-name" placeholder="Enter patient name" autocomplete="name">
+            <div class="err" id="err-name">Please enter the patient's full name.</div>
+          </div>
+          <div class="ff">
+            <label for="f-phone">Mobile Number *</label>
+            <input type="tel" id="f-phone" placeholder="e.g. +91 98765 43210" autocomplete="tel">
+            <div class="err" id="err-phone">Please enter a valid mobile number.</div>
+          </div>
+        </div>
+
+        <div class="ff">
+          <label for="f-reason">Reason for Consultation *</label>
+          <select id="f-reason">
+            <option value="">Select concern</option>
+            <option value="Breast lump / breast cancer concern">Breast lump / breast cancer concern</option>
+            <option value="Gynaecologic cancer (ovarian / endometrial / cervical)">Gynaecologic cancer (ovarian / endometrial / cervical)</option>
+            <option value="GI cancer / stomach / intestine concern">GI cancer / stomach / intestine concern</option>
+            <option value="Oesophageal / food-pipe cancer concern">Oesophageal / food-pipe cancer concern</option>
+            <option value="Thyroid / neck swelling / thyroid cancer concern">Thyroid / neck swelling / thyroid cancer concern</option>
+            <option value="Thoracic / lung cancer concern">Thoracic / lung cancer concern</option>
+            <option value="Liver / pancreas / gallbladder cancer concern">Liver / pancreas / gallbladder cancer concern</option>
+            <option value="Kidney / bladder / prostate cancer concern">Kidney / bladder / prostate cancer concern</option>
+            <option value="Bone / soft tissue tumour concern">Bone / soft tissue tumour concern</option>
+            <option value="Second opinion after diagnosis">Second opinion after diagnosis</option>
+            <option value="Post-surgery follow-up">Post-surgery follow-up</option>
+            <option value="Review of reports / scans">Review of reports / scans</option>
+            <option value="Other">Other</option>
+          </select>
+          <div class="err" id="err-reason">Please select a reason for consultation.</div>
+        </div>
+
+        <!-- Helpful fields -->
+        <div class="form-section-lbl">Additional Details <span style="font-weight:400;opacity:.6;font-size:.9em;">(optional — helps us prepare)</span></div>
+
+        <div class="form-row">
+          <div class="ff">
+            <label for="f-age">Age <span class="opt">(optional)</span></label>
+            <select id="f-age">
+              <option value="">Select age</option>
+<option value="1">1 yr</option><option value="2">2 yr</option><option value="3">3 yr</option><option value="4">4 yr</option><option value="5">5 yr</option><option value="6">6 yr</option><option value="7">7 yr</option><option value="8">8 yr</option><option value="9">9 yr</option><option value="10">10 yr</option><option value="11">11 yr</option><option value="12">12 yr</option><option value="13">13 yr</option><option value="14">14 yr</option><option value="15">15 yr</option><option value="16">16 yr</option><option value="17">17 yr</option><option value="18">18 yr</option><option value="19">19 yr</option><option value="20">20 yr</option><option value="21">21 yr</option><option value="22">22 yr</option><option value="23">23 yr</option><option value="24">24 yr</option><option value="25">25 yr</option><option value="26">26 yr</option><option value="27">27 yr</option><option value="28">28 yr</option><option value="29">29 yr</option><option value="30">30 yr</option><option value="31">31 yr</option><option value="32">32 yr</option><option value="33">33 yr</option><option value="34">34 yr</option><option value="35">35 yr</option><option value="36">36 yr</option><option value="37">37 yr</option><option value="38">38 yr</option><option value="39">39 yr</option><option value="40">40 yr</option><option value="41">41 yr</option><option value="42">42 yr</option><option value="43">43 yr</option><option value="44">44 yr</option><option value="45">45 yr</option><option value="46">46 yr</option><option value="47">47 yr</option><option value="48">48 yr</option><option value="49">49 yr</option><option value="50">50 yr</option><option value="51">51 yr</option><option value="52">52 yr</option><option value="53">53 yr</option><option value="54">54 yr</option><option value="55">55 yr</option><option value="56">56 yr</option><option value="57">57 yr</option><option value="58">58 yr</option><option value="59">59 yr</option><option value="60">60 yr</option><option value="61">61 yr</option><option value="62">62 yr</option><option value="63">63 yr</option><option value="64">64 yr</option><option value="65">65 yr</option><option value="66">66 yr</option><option value="67">67 yr</option><option value="68">68 yr</option><option value="69">69 yr</option><option value="70">70 yr</option><option value="71">71 yr</option><option value="72">72 yr</option><option value="73">73 yr</option><option value="74">74 yr</option><option value="75">75 yr</option><option value="76">76 yr</option><option value="77">77 yr</option><option value="78">78 yr</option><option value="79">79 yr</option><option value="80">80 yr</option><option value="81">81 yr</option><option value="82">82 yr</option><option value="83">83 yr</option><option value="84">84 yr</option><option value="85">85 yr</option><option value="86">86 yr</option><option value="87">87 yr</option><option value="88">88 yr</option><option value="89">89 yr</option><option value="90">90 yr</option><option value="91">91 yr</option><option value="92">92 yr</option><option value="93">93 yr</option><option value="94">94 yr</option><option value="95">95 yr</option><option value="96">96 yr</option><option value="97">97 yr</option><option value="98">98 yr</option><option value="99">99 yr</option><option value="100">100 yr</option><option value="101">101 yr</option><option value="102">102 yr</option><option value="103">103 yr</option><option value="104">104 yr</option><option value="105">105 yr</option><option value="106">106 yr</option><option value="107">107 yr</option><option value="108">108 yr</option><option value="109">109 yr</option><option value="110">110 yr</option>
+            </select>
+          </div>
+          <div class="ff">
+            <label for="f-reports">Reports Available? <span class="opt">(optional)</span></label>
+            <select id="f-reports">
+              <option value="">Select</option>
+              <option value="Yes — biopsy / pathology report">Yes — biopsy / pathology report</option>
+              <option value="Yes — scan / CT / MRI / PET">Yes — scan / CT / MRI / PET</option>
+              <option value="Yes — both reports and scans">Yes — both reports and scans</option>
+              <option value="No reports yet">No reports yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="ff">
+            <label for="f-date">Preferred Date <span class="opt">(optional)</span></label>
+            <input type="date" id="f-date" min="">
+          </div>
+          <div class="ff">
+            <label for="f-slot">Preferred Time Slot <span class="opt">(optional)</span></label>
+            <select id="f-slot">
+              <option value="">Select slot</option>
+              <option value="Morning (before 12 noon)">Morning (before 12 noon)</option>
+              <option value="Afternoon (12–4 PM)">Afternoon (12–4 PM)</option>
+              <option value="Evening (after 4 PM)">Evening (after 4 PM)</option>
+              <option value="Any time">Any time</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="ff">
+          <label for="f-msg">Brief Message <span class="opt">(optional)</span></label>
+          <textarea id="f-msg" rows="3" placeholder="Symptoms, diagnosis, reports available, or any specific question"></textarea>
+        </div>
+
+        <button class="btn-wa" id="btn-wa-submit" onclick="sendWhatsApp()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Request via WhatsApp
+        </button>
+        <p class="f-nmc">⚖️ On submission, this request will open in WhatsApp for you to send to the clinic. Scheduling only — not a medical consultation. NMC Compliant.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer>
+  <div class="f-sloka">मा कश्चित् दुःखमाप्नुयात्</div>
+  <div class="f-sub">May no one suffer</div>
+  <div class="f-links">
+    <a href="patient-resources.html" target="_blank">Patient Resources</a>
+    <a href="professional-resources.html" target="_blank">Professional Resources</a>
+    <a href="https://www.researchgate.net/profile/Dillip-Muduly" target="_blank">Publications</a>
+  </div>
+  <div class="f-sub">© Dr. Dillip Kumar Muduly · Senior Consultant, Surgical Oncology, Utkal Hospital, Bhubaneswar</div>
+  <div class="f-disc">Educational content only. Not a substitute for medical advice. NMC Advertising Guidelines 2023 compliant.</div>
+</footer>
+
+<!-- VIDEO LIGHTBOX -->
+<div class="lb" id="vlb" onclick="closeVlb()">
+  <div class="lb-inner" onclick="event.stopPropagation()">
+    <button class="lb-close" onclick="closeVlb()">✕</button>
+    <iframe class="lb-frame" id="lb-fr" src="" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- GALLERY LIGHTBOX -->
+<div class="glb" id="glb" onclick="closeGlb()">
+  <button class="glb-x" onclick="closeGlb()">✕</button>
+  <img id="glb-img" src="" alt="">
+</div>
+
+<script src="assets/media-config.js"></script>
+<script>
+/* ── EXPERTISE SCROLL ── */
+(function(){
+  const tr=document.getElementById('et'),p=document.getElementById('ep'),n=document.getElementById('en');
+  const S=280; let off=0;
+  const max=()=>tr.scrollWidth-tr.parentElement.clientWidth;
+  const upd=()=>{tr.style.transform=`translateX(-${off}px)`;p.disabled=off<=0;n.disabled=off>=max()-1};
+  n.onclick=()=>{off=Math.min(off+S,max());upd()};
+  p.onclick=()=>{off=Math.max(off-S,0);upd()};
+  window.addEventListener('resize',upd);
+  upd();
+})();
+
+/* ── COLLAB TABS ── */
+function showCollab(id,btn){
+  document.querySelectorAll('.c-panel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.c-tab').forEach(b=>b.classList.remove('on'));
+  document.getElementById('c-'+id).classList.add('on'); btn.classList.add('on');
+}
+
+/* ── SCROLL REVEAL ── */
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ── VIDEO LIGHTBOX ── */
+function openVid(id,pl){
+  const src=pl==='vimeo'?`https://player.vimeo.com/video/${id}?autoplay=1`:`https://www.youtube.com/embed/${id}?autoplay=1`;
+  document.getElementById('lb-fr').src=src;
+  document.getElementById('vlb').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeVlb(){document.getElementById('vlb').classList.remove('open');document.getElementById('lb-fr').src='';document.body.style.overflow='';}
+
+/* ── GALLERY LIGHTBOX ── */
+function openGlb(src){document.getElementById('glb-img').src=src;document.getElementById('glb').classList.add('open');document.body.style.overflow='hidden';}
+function closeGlb(){document.getElementById('glb').classList.remove('open');document.body.style.overflow='';}
+
+/* ── BUILD VIDEOS ── */
+const CAT_LBL={breast:'Breast Cancer',earlydetection:'Early Detection',odia:'Odia Content',gi:'GI Cancer',thyroid:'Thyroid Cancer',general:'General Oncology'};
+function buildVideos(){
+  const cfg=window.MEDIA_CONFIG,g=document.getElementById('vg');
+  const vids=(cfg&&cfg.videos)||[];
+  const render=cat=>{
+    const f=cat==='all'?vids:vids.filter(v=>v.category===cat);
+    if(!f.length){
+      g.innerHTML=`
+        <div class="vid-ph"><div class="pi">▶</div><p>No videos yet</p><p style="font-size:.69rem;opacity:.6;margin-top:4px">Add IDs in <strong>assets/media-config.js</strong></p></div>
+        <div class="vid-ph"><div class="pi">▶</div><p>Breast Cancer Awareness</p><p style="opacity:.4;font-size:.68rem">Coming soon</p></div>
+        <div class="vid-ph"><div class="pi">▶</div><p>Odia Podcast Series</p><p style="opacity:.4;font-size:.68rem">Coming soon</p></div>`;
+      return;
     }
-
-    function scrollGallery(amount) {
-      document.getElementById("galleryScroll").scrollBy({ left: amount, behavior: 'smooth' });
-    }
-
-    function openModal(src, caption) {
-      document.getElementById("galleryModal").style.display = "flex";
-      document.getElementById("modalImage").src = src;
-      document.getElementById("modalCaption").textContent = caption;
-    }
-
-    function closeModal() {
-      document.getElementById("galleryModal").style.display = "none";
-    }
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add("visible");
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  // Hero Slider (Fade)
-  let heroIndex = 0;
-  let heroTimer = null;
-  const HERO_INTERVAL_MS = 7000;
-
-  function heroEls() {
-    const slidesWrap = document.getElementById('heroSlides');
-    const dotsWrap = document.getElementById('heroDots');
-    if (!slidesWrap || !dotsWrap) return null;
-    return {
-      slides: Array.from(slidesWrap.querySelectorAll('.hero-slide')),
-      dots: Array.from(dotsWrap.querySelectorAll('.hero-dot')),
-      slider: document.getElementById('heroSlider')
+    g.innerHTML=f.map(v=>{
+      const th=v.platform==='vimeo'?`https://vumbnail.com/${v.id}.jpg`:`https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
+      return `<div class="video-card">
+        <div class="video-thumb" onclick="openVid('${v.id}','${v.platform||'youtube'}')">
+          <img src="${th}" alt="${v.title}" loading="lazy">
+          <div class="video-overlay"><div class="play-btn">▶</div></div>
+        </div>
+        <div class="video-info">
+          <div class="video-cat">${CAT_LBL[v.category]||v.category}</div>
+          <div class="video-title">${v.title}</div>
+        </div>
+      </div>`;
+    }).join('');
+  };
+  document.querySelectorAll('#vf .m-tab').forEach(btn=>{
+    btn.onclick=function(){
+      document.querySelectorAll('#vf .m-tab').forEach(b=>b.classList.remove('on'));
+      this.classList.add('on'); render(this.dataset.cat);
     };
+  });
+  render('all');
+}
+
+/* ── BUILD GALLERY ── */
+function buildGallery(){
+  const cfg=window.MEDIA_CONFIG,g=document.getElementById('gg');
+  const def=(cfg&&cfg.gallery)||{};
+  let all=[];
+  Object.entries(def).forEach(([cat,d])=>{
+    for(let i=1;i<=d.count;i++)
+      all.push({src:`assets/gallery/${d.prefix}${i}.jpg`,cat,label:`${d.label} #${i}`});
+  });
+  if(!all.length){
+    g.innerHTML=Object.entries(def).map(([,d])=>`
+      <div class="g-ph">
+        <span style="font-size:1.3rem;opacity:.22">🖼</span>
+        <strong style="color:var(--dk-dim)">${d.label}</strong>
+        <span>Upload: ${d.prefix}1.jpg …<br>Set count in media-config.js</span>
+      </div>`).join('');
+    return;
+  }
+  const render=cat=>{
+    const f=cat==='all'?all:all.filter(i=>i.cat===cat);
+    g.innerHTML=f.map(item=>`
+      <div class="g-item" onclick="openGlb('${item.src}')">
+        <img src="${item.src}" alt="${item.label}" loading="lazy" onerror="this.closest('.g-item').style.display='none'">
+        <div class="g-ov"><span class="g-lbl">${item.label}</span></div>
+      </div>`).join('');
+    if(!f.length) g.innerHTML=`<p style="color:var(--dk-dim);font-size:.82rem;padding:14px 0">No images in this category yet.</p>`;
+  };
+  document.querySelectorAll('#gf .g-tab').forEach(btn=>{
+    btn.onclick=function(){
+      document.querySelectorAll('#gf .g-tab').forEach(b=>b.classList.remove('on'));
+      this.classList.add('on'); render(this.dataset.cat);
+    };
+  });
+  render('all');
+}
+
+/* ── APPLY CONTACT FROM CONFIG ── */
+function applyContact(){
+  const c=window.MEDIA_CONFIG&&window.MEDIA_CONFIG.clinic; if(!c)return;
+  if(c.address) document.getElementById('cl-addr').textContent=c.address;
+  if(c.phone){const e=document.getElementById('cl-ph');e.textContent=c.phone;e.href='tel:'+c.phone.replace(/\s/g,'');}
+  if(c.whatsapp){const e=document.getElementById('cl-wa');e.href='https://wa.me/'+c.whatsapp;e.textContent='Message on WhatsApp';}
+}
+
+/* ── WHATSAPP FORM ── */
+function clearInvalid(id){
+  const el=document.getElementById(id);
+  if(el){el.classList.remove('invalid');const e=el.parentElement.querySelector('.err');if(e)e.classList.remove('show');}
+}
+['f-name','f-phone','f-reason'].forEach(id=>{
+  const el=document.getElementById(id);
+  if(el) el.addEventListener('input',()=>clearInvalid(id));
+  if(el) el.addEventListener('change',()=>clearInvalid(id));
+});
+
+function sendWhatsApp(){
+  const name    = document.getElementById('f-name').value.trim();
+  const phone   = document.getElementById('f-phone').value.trim();
+  const ageEl   = document.getElementById('f-age');
+  const age     = ageEl ? ageEl.options[ageEl.selectedIndex].value : '';
+  const reason  = document.getElementById('f-reason').value;
+  const dateVal = document.getElementById('f-date').value;
+  const slotEl  = document.getElementById('f-slot');
+  const slot    = slotEl ? slotEl.options[slotEl.selectedIndex].value : '';
+  const reports = document.getElementById('f-reports') ? document.getElementById('f-reports').value : '';
+  const msg     = document.getElementById('f-msg').value.trim();
+
+  // Inline validation
+  let valid = true;
+  const mark=(id,errId)=>{
+    document.getElementById(id).classList.add('invalid');
+    const e=document.getElementById(errId);if(e)e.classList.add('show');
+    valid=false;
+  };
+  if(!name)  mark('f-name','err-name');
+  if(!phone) mark('f-phone','err-phone');
+  if(!reason)mark('f-reason','err-reason');
+  if(!valid){
+    // scroll to first error
+    const first=document.querySelector('.invalid');
+    if(first)first.scrollIntoView({behavior:'smooth',block:'center'});
+    return;
   }
 
-  function heroSetActive(newIndex) {
-    const els = heroEls();
-    if (!els) return;
-
-    const total = els.slides.length;
-    heroIndex = (newIndex + total) % total;
-
-    els.slides.forEach((s, i) => s.classList.toggle('is-active', i === heroIndex));
-    els.dots.forEach((d, i) => d.classList.toggle('is-active', i === heroIndex));
+  // Get WhatsApp number from config
+  const rawWA = (window.MEDIA_CONFIG && window.MEDIA_CONFIG.clinic && window.MEDIA_CONFIG.clinic.whatsapp) || '';
+  const wa    = rawWA.replace(/[\s\-\+]/g,'');
+  if(!wa || wa==='91XXXXXXXXXX' || wa.replace(/[^0-9]/g,'').length<10){
+    alert('WhatsApp number not yet configured.\n\nOpen assets/media-config.js and update:\n  whatsapp: "919XXXXXXXXX"');
+    return;
   }
 
-  function heroNext() {
-    heroSetActive(heroIndex + 1);
-    heroResetTimer();
+  // Sending state feedback
+  const btn = document.getElementById('btn-wa-submit');
+  if(btn){ btn.classList.add('sending'); btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Preparing your WhatsApp message…'; }
+
+  // Format date nicely
+  let dateStr = '';
+  if(dateVal){
+    try{const d=new Date(dateVal+'T00:00:00');dateStr=d.toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short',year:'numeric'});}catch(e){dateStr=dateVal;}
   }
 
-  function heroPrev() {
-    heroSetActive(heroIndex - 1);
-    heroResetTimer();
+  // Build WhatsApp message
+  const lines = [
+    '🏥 *Appointment Request*',
+    '*Dr. Dillip Kumar Muduly — Surgical Oncologist, Bhubaneswar*',
+    '───────────────────────',
+    `👤 *Name:* ${name}`,
+    `📞 *Mobile:* ${phone}`,
+    age     ? `🎂 *Age:* ${age} yrs`                               : '',
+    `🩺 *Concern:* ${reason}`,
+    reports ? `📋 *Reports:* ${reports}`                           : '',
+    dateStr ? `📅 *Preferred Date:* ${dateStr}`                    : '',
+    slot    ? `🕐 *Preferred Time:* ${slot}`                       : '',
+    msg     ? `💬 *Message:* ${msg}`                               : '',
+    '───────────────────────',
+    '_Sent via drdillipmuduly.co.in_'
+  ].filter(Boolean).join('\n');
+
+  const url = 'https://wa.me/' + wa + '?text=' + encodeURIComponent(lines);
+  setTimeout(()=>{
+    window.open(url,'_blank');
+    if(btn){ btn.classList.remove('sending'); btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Request via WhatsApp'; }
+  }, 600);
+}
+
+/* ── INIT ── */
+document.addEventListener('DOMContentLoaded',()=>{
+  buildVideos();buildGallery();applyContact();
+  // Measure fixed header height and apply to hero padding
+  function setHeroOffset(){
+    const hdr = document.getElementById('site-header');
+    if(hdr){
+      const h = hdr.offsetHeight;
+      const hero = document.querySelector('.hero');
+      if(hero){ hero.style.paddingTop = h + 'px'; hero.style.minHeight = '100vh'; }
+    }
   }
-
-  function heroGoTo(i) {
-    heroSetActive(i);
-    heroResetTimer();
-  }
-
-  function heroStartTimer() {
-    // Don't auto-animate if user prefers reduced motion
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    heroStopTimer();
-    heroTimer = setInterval(() => heroSetActive(heroIndex + 1), HERO_INTERVAL_MS);
-  }
-
-  function heroStopTimer() {
-    if (heroTimer) clearInterval(heroTimer);
-    heroTimer = null;
-  }
-
-  function heroResetTimer() {
-    heroStartTimer();
-  }
-
-  // Init
-  (function heroInit() {
-    const els = heroEls();
-    if (!els) return;
-
-    heroSetActive(0);
-    heroStartTimer();
-
-    // Pause on hover
-    els.slider.addEventListener('mouseenter', heroStopTimer);
-    els.slider.addEventListener('mouseleave', heroStartTimer);
-
-    // Keyboard support
-    els.slider.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') heroPrev();
-      if (e.key === 'ArrowRight') heroNext();
-    });
-  })();
-
-  </script>
+  setHeroOffset();
+  window.addEventListener('resize', setHeroOffset);
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeVlb();closeGlb();}});
+</script>
 </body>
 </html>
