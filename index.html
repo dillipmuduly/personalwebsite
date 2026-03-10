@@ -610,10 +610,84 @@ footer{
 /* ═══════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════ */
+/* Mobile hero photo strip */
+.mobile-hero-photo{
+  display:none;
+  width:100%;
+  position:relative;
+  background:linear-gradient(160deg, var(--hero-card) 0%, var(--hero-blush) 100%);
+  overflow:hidden;
+}
+.mobile-hero-photo img{
+  width:100%;
+  max-height:72vw;
+  object-fit:cover;
+  object-position:top center;
+  display:block;
+}
+.mobile-hero-photo .photo-cred-bar{
+  position:absolute;bottom:0;left:0;right:0;
+  background:rgba(22,32,64,.88);backdrop-filter:blur(10px);
+  padding:8px 14px;
+  display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+}
+.mobile-book-btn{
+  display:none;
+  margin:0 20px 28px;
+}
+.mobile-book-btn a{
+  display:block;width:100%;text-align:center;
+  background:var(--teal);color:#fff;
+  padding:14px 24px;border-radius:8px;
+  font-family:'DM Sans',sans-serif;font-size:.92rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  box-shadow:0 4px 18px rgba(14,116,144,.35);
+  transition:background .2s;
+}
+.mobile-book-btn a:hover{background:var(--teal-lt)}
+
+/* WhatsApp popup */
+.wa-popup-overlay{
+  display:none;position:fixed;inset:0;z-index:10000;
+  background:rgba(22,32,64,.72);backdrop-filter:blur(6px);
+  align-items:center;justify-content:center;padding:24px;
+}
+.wa-popup-overlay.open{display:flex}
+.wa-popup-box{
+  background:#fff;border-radius:16px;
+  padding:32px 28px;max-width:420px;width:100%;
+  text-align:center;
+  box-shadow:0 24px 80px rgba(22,32,64,.35);
+  animation:popIn .3s cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes popIn{from{transform:scale(.82);opacity:0}to{transform:scale(1);opacity:1}}
+.wa-popup-icon{font-size:3rem;margin-bottom:10px}
+.wa-popup-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.65rem;font-weight:700;
+  color:#16a34a;line-height:1.2;margin-bottom:10px;
+}
+.wa-popup-sub{font-size:.88rem;color:#374151;margin-bottom:22px;line-height:1.6}
+.wa-popup-btn{
+  display:block;width:100%;
+  background:#22c55e;color:#fff;
+  padding:15px 24px;border-radius:10px;border:none;
+  font-size:1rem;font-weight:700;cursor:pointer;
+  box-shadow:0 4px 20px rgba(34,197,94,.4);
+  transition:background .2s;margin-bottom:10px;
+}
+.wa-popup-btn:hover{background:#16a34a}
+.wa-popup-cancel{
+  font-size:.8rem;color:#9ca3af;cursor:pointer;
+  background:none;border:none;padding:6px;
+}
+.wa-popup-cancel:hover{color:#374151}
+
 @media(max-width:980px){
-  .hero{grid-template-columns:1fr}
+  .hero{grid-template-columns:1fr;min-height:auto!important;}
   .hero-right{display:none}
-  .hero-text{padding:48px 24px 40px}
+  .hero-text{padding:28px 20px 20px}
+  .mobile-hero-photo{display:block}
+  .mobile-book-btn{display:block}
   .journey-grid,.contact-grid,.research-split{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
   .contact-grid{gap:36px}
@@ -735,6 +809,25 @@ footer{
 
   </div>
 </section>
+
+<!-- ════════════════ MOBILE HERO PHOTO (shown only on mobile) ════════════════ -->
+<div class="mobile-hero-photo" id="mobile-hero-photo-strip">
+  <img
+    src="assets/gallery/hero_image.jpg"
+    alt="Dr. Dillip Kumar Muduly — Senior Consultant, Surgical Oncology"
+    onerror="this.style.display='none'"
+  >
+  <div class="photo-cred-bar">
+    <span class="pc">Dr (Prof) Dillip K Muduly</span><span class="pc-dot"></span>
+    <span class="pc">MS (General Surgery), AIIMS New Delhi</span>
+    <span class="pc">MCh Surgical Oncology, AIIMS New Delhi</span><span class="pc-dot"></span>
+    <span class="pc">Fellow of American College of Surgeons (FACS)</span><span class="pc-dot"></span>
+    <span class="pc">Fellow of International Union for Cancer Control (FUICC)</span>
+  </div>
+</div>
+<div class="mobile-book-btn">
+  <a href="#contact">📅 Book Appointment</a>
+</div>
 
 <!-- ════════════════ EXPERTISE ════════════════ -->
 <section id="expertise" class="sec-expertise">
@@ -940,117 +1033,142 @@ footer{
 </section>
 
 <!-- ════════════════ CONTACT ════════════════ -->
-<section id="contact" class="sec-dark">
+<section id="contact" style="background:#f5f0f3;">
   <div class="wrap">
-    <div class="sec-lbl">Appointments</div>
-    <h2 class="sec-title dk">Request an Appointment</h2>
+    <div class="sec-lbl lt">Appointments</div>
+    <h2 class="sec-title lt">Request an Appointment</h2>
     <div class="rule"></div>
     <div class="contact-grid">
+      <!-- Left col: only form now (address/phone block removed per instructions) -->
       <div>
-        <div class="ci"><div class="ci-ico">📍</div><div><div class="ci-lbl">Address</div><div class="ci-val" id="cl-addr">Utkal Hospital, Bhubaneswar, Odisha</div></div></div>
-        <div class="ci"><div class="ci-ico">📞</div><div><div class="ci-lbl">Phone</div><div class="ci-val"><a id="cl-ph" href="#">Update in media-config.js</a></div></div></div>
-        <div class="ci"><div class="ci-ico">💬</div><div><div class="ci-lbl">WhatsApp</div><div class="ci-val"><a id="cl-wa" href="#">Message on WhatsApp</a></div></div></div>
-        <div class="ci"><div class="ci-ico">🏥</div><div><div class="ci-lbl">OPD</div><div class="ci-val" style="font-size:.8rem;color:var(--dk-dim)">Take Appointment.</div></div></div>
-        </div>
-      <div>
-
         <!-- Reassurance intro -->
-        <div style="margin-bottom:20px;padding:14px 18px;background:rgba(14,116,144,.18);border-left:3px solid var(--teal-lt);border-radius:0 8px 8px 0;">
-          <p style="font-size:.92rem;color:rgba(255,255,255,.9);line-height:1.65;">Share your details and preferred schedule. Our team will contact you to confirm the appointment.<br><span style="font-size:.8rem;opacity:.75;">Scheduling only — not for emergency or urgent medical advice.</span></p>
+        <div style="margin-bottom:20px;padding:14px 18px;background:rgba(14,116,144,.12);border-left:3px solid var(--teal);border-radius:0 8px 8px 0;">
+          <p style="font-size:.92rem;color:var(--tx-body);line-height:1.65;">Share your details and preferred schedule. Our team will contact you to confirm the appointment.<br><span style="font-size:.8rem;opacity:.75;">Scheduling only — not for emergency or urgent medical advice.</span></p>
         </div>
 
-        <!-- Essential fields -->
-        <div class="form-section-lbl">Essential</div>
+        <!-- SECTION 1: Essential fields — soft pink background -->
+        <div style="background:#fce4ec;border-radius:12px;padding:20px 20px 16px;margin-bottom:16px;border:1px solid rgba(194,69,94,.15);">
+          <div style="font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#c2455e;margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid rgba(194,69,94,.2);">Essential</div>
 
-        <div class="form-row">
-          <div class="ff">
-            <label for="f-name">Full Name *</label>
-            <input type="text" id="f-name" placeholder="Enter patient name" autocomplete="name">
-            <div class="err" id="err-name">Please enter the patient's full name.</div>
+          <div class="form-row">
+            <div class="ff">
+              <label for="f-name" style="color:#7b2d3e;">Full Name *</label>
+              <input type="text" id="f-name" placeholder="Enter patient name" autocomplete="name" style="background:rgba(255,255,255,.85);border-color:rgba(194,69,94,.3);color:#1f2937;">
+              <div class="err" id="err-name">Please enter the patient's full name.</div>
+            </div>
+            <div class="ff">
+              <label for="f-phone" style="color:#7b2d3e;">Mobile Number *</label>
+              <input type="tel" id="f-phone" placeholder="e.g. +91 98765 43210" autocomplete="tel" style="background:rgba(255,255,255,.85);border-color:rgba(194,69,94,.3);color:#1f2937;">
+              <div class="err" id="err-phone">Please enter a valid mobile number.</div>
+            </div>
           </div>
+
           <div class="ff">
-            <label for="f-phone">Mobile Number *</label>
-            <input type="tel" id="f-phone" placeholder="e.g. +91 98765 43210" autocomplete="tel">
-            <div class="err" id="err-phone">Please enter a valid mobile number.</div>
+            <label for="f-reason" style="color:#7b2d3e;">Reason for Consultation *</label>
+            <select id="f-reason" style="background:rgba(255,255,255,.9);border-color:rgba(194,69,94,.3);color:#1f2937;">
+              <option value="">Select concern</option>
+              <option value="Breast lump / breast cancer concern">Breast lump / breast cancer concern</option>
+              <option value="Gynaecologic cancer (ovarian / endometrial / cervical)">Gynaecologic cancer (ovarian / endometrial / cervical)</option>
+              <option value="GI cancer / stomach / intestine concern">GI cancer / stomach / intestine concern</option>
+              <option value="Oesophageal / food-pipe cancer concern">Oesophageal / food-pipe cancer concern</option>
+              <option value="Thyroid / neck swelling / thyroid cancer concern">Thyroid / neck swelling / thyroid cancer concern</option>
+              <option value="Thoracic / lung cancer concern">Thoracic / lung cancer concern</option>
+              <option value="Liver / pancreas / gallbladder cancer concern">Liver / pancreas / gallbladder cancer concern</option>
+              <option value="Kidney / bladder / prostate cancer concern">Kidney / bladder / prostate cancer concern</option>
+              <option value="Bone / soft tissue tumour concern">Bone / soft tissue tumour concern</option>
+              <option value="Second opinion after diagnosis">Second opinion after diagnosis</option>
+              <option value="Post-surgery follow-up">Post-surgery follow-up</option>
+              <option value="Review of reports / scans">Review of reports / scans</option>
+              <option value="Other">Other</option>
+            </select>
+            <div class="err" id="err-reason">Please select a reason for consultation.</div>
           </div>
         </div>
 
-        <div class="ff">
-          <label for="f-reason">Reason for Consultation *</label>
-          <select id="f-reason">
-            <option value="">Select concern</option>
-            <option value="Breast lump / breast cancer concern">Breast lump / breast cancer concern</option>
-            <option value="Gynaecologic cancer (ovarian / endometrial / cervical)">Gynaecologic cancer (ovarian / endometrial / cervical)</option>
-            <option value="GI cancer / stomach / intestine concern">GI cancer / stomach / intestine concern</option>
-            <option value="Oesophageal / food-pipe cancer concern">Oesophageal / food-pipe cancer concern</option>
-            <option value="Thyroid / neck swelling / thyroid cancer concern">Thyroid / neck swelling / thyroid cancer concern</option>
-            <option value="Thoracic / lung cancer concern">Thoracic / lung cancer concern</option>
-            <option value="Liver / pancreas / gallbladder cancer concern">Liver / pancreas / gallbladder cancer concern</option>
-            <option value="Kidney / bladder / prostate cancer concern">Kidney / bladder / prostate cancer concern</option>
-            <option value="Bone / soft tissue tumour concern">Bone / soft tissue tumour concern</option>
-            <option value="Second opinion after diagnosis">Second opinion after diagnosis</option>
-            <option value="Post-surgery follow-up">Post-surgery follow-up</option>
-            <option value="Review of reports / scans">Review of reports / scans</option>
-            <option value="Other">Other</option>
-          </select>
-          <div class="err" id="err-reason">Please select a reason for consultation.</div>
-        </div>
+        <!-- SECTION 2: Additional fields — soft blue-green background -->
+        <div style="background:#e8f4f8;border-radius:12px;padding:20px 20px 16px;margin-bottom:16px;border:1px solid rgba(14,116,144,.15);">
+          <div style="font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid rgba(14,116,144,.2);">Additional Details <span style="font-weight:400;opacity:.65;text-transform:none;letter-spacing:0;font-size:.9em;">(optional — helps us prepare)</span></div>
 
-        <!-- Helpful fields -->
-        <div class="form-section-lbl">Additional Details <span style="font-weight:400;opacity:.6;font-size:.9em;">(optional — helps us prepare)</span></div>
-
-        <div class="form-row">
-          <div class="ff">
-            <label for="f-age">Age <span class="opt">(optional)</span></label>
-            <select id="f-age">
-              <option value="">Select age</option>
+          <div class="form-row">
+            <div class="ff">
+              <label for="f-age" style="color:#0e5a6e;">Age <span class="opt">(optional)</span></label>
+              <select id="f-age" style="background:rgba(255,255,255,.85);border-color:rgba(14,116,144,.25);color:#1f2937;">
+                <option value="">Select age</option>
 <option value="1">1 yr</option><option value="2">2 yr</option><option value="3">3 yr</option><option value="4">4 yr</option><option value="5">5 yr</option><option value="6">6 yr</option><option value="7">7 yr</option><option value="8">8 yr</option><option value="9">9 yr</option><option value="10">10 yr</option><option value="11">11 yr</option><option value="12">12 yr</option><option value="13">13 yr</option><option value="14">14 yr</option><option value="15">15 yr</option><option value="16">16 yr</option><option value="17">17 yr</option><option value="18">18 yr</option><option value="19">19 yr</option><option value="20">20 yr</option><option value="21">21 yr</option><option value="22">22 yr</option><option value="23">23 yr</option><option value="24">24 yr</option><option value="25">25 yr</option><option value="26">26 yr</option><option value="27">27 yr</option><option value="28">28 yr</option><option value="29">29 yr</option><option value="30">30 yr</option><option value="31">31 yr</option><option value="32">32 yr</option><option value="33">33 yr</option><option value="34">34 yr</option><option value="35">35 yr</option><option value="36">36 yr</option><option value="37">37 yr</option><option value="38">38 yr</option><option value="39">39 yr</option><option value="40">40 yr</option><option value="41">41 yr</option><option value="42">42 yr</option><option value="43">43 yr</option><option value="44">44 yr</option><option value="45">45 yr</option><option value="46">46 yr</option><option value="47">47 yr</option><option value="48">48 yr</option><option value="49">49 yr</option><option value="50">50 yr</option><option value="51">51 yr</option><option value="52">52 yr</option><option value="53">53 yr</option><option value="54">54 yr</option><option value="55">55 yr</option><option value="56">56 yr</option><option value="57">57 yr</option><option value="58">58 yr</option><option value="59">59 yr</option><option value="60">60 yr</option><option value="61">61 yr</option><option value="62">62 yr</option><option value="63">63 yr</option><option value="64">64 yr</option><option value="65">65 yr</option><option value="66">66 yr</option><option value="67">67 yr</option><option value="68">68 yr</option><option value="69">69 yr</option><option value="70">70 yr</option><option value="71">71 yr</option><option value="72">72 yr</option><option value="73">73 yr</option><option value="74">74 yr</option><option value="75">75 yr</option><option value="76">76 yr</option><option value="77">77 yr</option><option value="78">78 yr</option><option value="79">79 yr</option><option value="80">80 yr</option><option value="81">81 yr</option><option value="82">82 yr</option><option value="83">83 yr</option><option value="84">84 yr</option><option value="85">85 yr</option><option value="86">86 yr</option><option value="87">87 yr</option><option value="88">88 yr</option><option value="89">89 yr</option><option value="90">90 yr</option><option value="91">91 yr</option><option value="92">92 yr</option><option value="93">93 yr</option><option value="94">94 yr</option><option value="95">95 yr</option><option value="96">96 yr</option><option value="97">97 yr</option><option value="98">98 yr</option><option value="99">99 yr</option><option value="100">100 yr</option><option value="101">101 yr</option><option value="102">102 yr</option><option value="103">103 yr</option><option value="104">104 yr</option><option value="105">105 yr</option><option value="106">106 yr</option><option value="107">107 yr</option><option value="108">108 yr</option><option value="109">109 yr</option><option value="110">110 yr</option>
-            </select>
+              </select>
+            </div>
+            <div class="ff">
+              <label for="f-reports" style="color:#0e5a6e;">Reports Available? <span class="opt">(optional)</span></label>
+              <select id="f-reports" style="background:rgba(255,255,255,.85);border-color:rgba(14,116,144,.25);color:#1f2937;">
+                <option value="">Select</option>
+                <option value="Yes — biopsy / pathology report">Yes — biopsy / pathology report</option>
+                <option value="Yes — scan / CT / MRI / PET">Yes — scan / CT / MRI / PET</option>
+                <option value="Yes — both reports and scans">Yes — both reports and scans</option>
+                <option value="No reports yet">No reports yet</option>
+              </select>
+            </div>
           </div>
-          <div class="ff">
-            <label for="f-reports">Reports Available? <span class="opt">(optional)</span></label>
-            <select id="f-reports">
-              <option value="">Select</option>
-              <option value="Yes — biopsy / pathology report">Yes — biopsy / pathology report</option>
-              <option value="Yes — scan / CT / MRI / PET">Yes — scan / CT / MRI / PET</option>
-              <option value="Yes — both reports and scans">Yes — both reports and scans</option>
-              <option value="No reports yet">No reports yet</option>
-            </select>
-          </div>
-        </div>
 
-        <div class="form-row">
-          <div class="ff">
-            <label for="f-date">Preferred Date <span class="opt">(optional)</span></label>
-            <input type="date" id="f-date" min="">
+          <div class="form-row">
+            <div class="ff">
+              <label for="f-date" style="color:#0e5a6e;">Preferred Date <span class="opt">(optional)</span></label>
+              <input type="date" id="f-date" min="" style="background:rgba(255,255,255,.85);border-color:rgba(14,116,144,.25);color:#1f2937;">
+            </div>
+            <div class="ff">
+              <label for="f-slot" style="color:#0e5a6e;">Preferred Time Slot <span class="opt">(optional)</span></label>
+              <select id="f-slot" style="background:rgba(255,255,255,.85);border-color:rgba(14,116,144,.25);color:#1f2937;">
+                <option value="">Select slot</option>
+                <option value="Morning (before 12 noon)">Morning (before 12 noon)</option>
+                <option value="Afternoon (12–4 PM)">Afternoon (12–4 PM)</option>
+                <option value="Evening (after 4 PM)">Evening (after 4 PM)</option>
+                <option value="Any time">Any time</option>
+              </select>
+            </div>
           </div>
-          <div class="ff">
-            <label for="f-slot">Preferred Time Slot <span class="opt">(optional)</span></label>
-            <select id="f-slot">
-              <option value="">Select slot</option>
-              <option value="Morning (before 12 noon)">Morning (before 12 noon)</option>
-              <option value="Afternoon (12–4 PM)">Afternoon (12–4 PM)</option>
-              <option value="Evening (after 4 PM)">Evening (after 4 PM)</option>
-              <option value="Any time">Any time</option>
-            </select>
-          </div>
-        </div>
 
-        <div class="ff">
-          <label for="f-msg">Brief Message <span class="opt">(optional)</span></label>
-          <textarea id="f-msg" rows="3" placeholder="Symptoms, diagnosis, reports available, or any specific question"></textarea>
+          <div class="ff">
+            <label for="f-msg" style="color:#0e5a6e;">Brief Message <span class="opt">(optional)</span></label>
+            <textarea id="f-msg" rows="3" placeholder="Symptoms, diagnosis, reports available, or any specific question" style="background:rgba(255,255,255,.85);border-color:rgba(14,116,144,.25);color:#1f2937;"></textarea>
+          </div>
         </div>
 
         <button class="btn-wa" id="btn-wa-submit" onclick="sendWhatsApp()">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Request via WhatsApp
         </button>
-        <p class="f-nmc">⚖️ On submission, this request will open in WhatsApp for you to send to the clinic. Scheduling only — not a medical consultation. NMC Compliant.</p>
+        <p class="f-nmc" style="color:#5a6a7e;">⚖️ On submission, this request will open in WhatsApp for you to send to the clinic. Scheduling only — not a medical consultation. NMC Compliant.</p>
 
+      </div>
+      <!-- Right col intentionally left for layout balance on desktop; empty on mobile -->
+      <div style="display:flex;align-items:center;justify-content:center;">
+        <div style="background:rgba(14,116,144,.07);border:1px solid rgba(14,116,144,.15);border-radius:16px;padding:32px 24px;text-align:center;">
+          <div style="font-size:3rem;margin-bottom:12px;">🏥</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--tx-dark);margin-bottom:8px;">Utkal Hospital</div>
+          <div style="font-size:.9rem;color:var(--tx-mid);margin-bottom:20px;">Bhubaneswar, Odisha</div>
+          <div style="font-size:.82rem;color:var(--tx-body);line-height:2;">
+            <div>📅 Fill form &amp; send via WhatsApp</div>
+            <div>⏱ Response within working hours</div>
+            <div>🩺 Not for emergencies</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- WHATSAPP POPUP -->
+<div class="wa-popup-overlay" id="wa-popup-overlay">
+  <div class="wa-popup-box">
+    <div class="wa-popup-icon">💬</div>
+    <div class="wa-popup-title">Open WhatsApp to Send an Appointment Request</div>
+    <div class="wa-popup-sub">Your appointment details are ready. Tap below to open WhatsApp and send your request to the clinic.</div>
+    <button class="wa-popup-btn" id="wa-popup-open-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:8px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Open WhatsApp Now
+    </button>
+    <button class="wa-popup-cancel" onclick="document.getElementById('wa-popup-overlay').classList.remove('open')">Cancel — go back</button>
+  </div>
+</div>
 
 <!-- ════════════════ FOOTER ════════════════ -->
 <footer>
@@ -1274,10 +1392,20 @@ function sendWhatsApp(){
   ].filter(Boolean).join('\n');
 
   const url = 'https://wa.me/' + wa + '?text=' + encodeURIComponent(lines);
-  setTimeout(()=>{
+
+  // Show popup, wire open button
+  const waPopup = document.getElementById('wa-popup-overlay');
+  const waPopupBtn = document.getElementById('wa-popup-open-btn');
+  if(btn){ btn.classList.remove('sending'); btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Request via WhatsApp'; }
+  waPopup.classList.add('open');
+  // Remove previous listeners by cloning
+  const newBtn = waPopupBtn.cloneNode(true);
+  waPopupBtn.parentNode.replaceChild(newBtn, waPopupBtn);
+  newBtn.addEventListener('click', function(){
+    waPopup.classList.remove('open');
     window.open(url,'_blank');
-    if(btn){ btn.classList.remove('sending'); btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Request via WhatsApp'; }
-  }, 600);
+  });
+  waPopup.onclick = function(e){ if(e.target === waPopup) waPopup.classList.remove('open'); };
 }
 
 /* ── INIT ── */
@@ -1294,6 +1422,17 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
   setHeroOffset();
   window.addEventListener('resize', setHeroOffset);
+
+  // Mobile hero photo strip — place it right after the fixed header
+  function setMobilePhotoOffset(){
+    const hdr = document.getElementById('site-header');
+    const strip = document.getElementById('mobile-hero-photo-strip');
+    if(hdr && strip && window.innerWidth <= 980){
+      strip.style.marginTop = '0px';
+    }
+  }
+  setMobilePhotoOffset();
+  window.addEventListener('resize', setMobilePhotoOffset);
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeVlb();closeGlb();}});
 </script>
