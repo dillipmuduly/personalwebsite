@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Dr. Dillip Kumar Muduly | Senior Consultant Surgical Oncologist | Bhubaneswar</title>
+<title>Dr. Dillip Kumar Muduly | Senior Consultant Surgical Oncology | Bhubaneswar</title>
 <meta name="description" content="Dr. Dillip Kumar Muduly – Senior Consultant, Surgical Oncology, Utkal Hospital, Bhubaneswar. Formerly Professor & Head, AIIMS Bhubaneswar. 23+ years expertise."/>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1VWYQV5NQ"></script>
@@ -117,7 +117,7 @@ nav{
    HERO  — split: text left | photo right
 ═══════════════════════════════════════════ */
 .hero{
-  min-height:100vh;padding-top:110px;
+  min-height:100vh;padding-top:110px;/* desktop only */
   display:grid;
   grid-template-columns:1fr 460px;
   background:var(--hero-bg);
@@ -198,7 +198,7 @@ nav{
 .stat-l{font-size:.56rem;text-transform:uppercase;letter-spacing:.12em;color:var(--tx-mid);margin-top:4px;font-weight:600}
 
 /* Credential pills row */
-.hero-creds{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:7px}
+.hero-creds{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:4px}
 .hc-pill{
   font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
   padding:4px 11px;border-radius:20px;border:1px solid rgba(22,32,64,.14);
@@ -301,13 +301,13 @@ section{padding:84px 0}
 .wrap{max-width:1240px;margin:0 auto;padding:0 48px}
 .sec-lbl{font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-lt);margin-bottom:10px}
 .sec-lbl.lt{color:var(--teal)}
-.sec-title{font-size:clamp(2rem,3vw,2.75rem);font-weight:600;line-height:1.12;margin-bottom:14px}
+.sec-title{font-size:clamp(2rem,3vw,2.75rem);font-weight:600;line-height:1.12;margin-bottom:6px}
 .sec-title.dk{color:#fff}
 .sec-title.lt{color:var(--tx-dark)}
 .sec-sub{font-size:.95rem;line-height:1.78;max-width:600px}
 .sec-sub.dk{color:var(--dk-dim)}
 .sec-sub.lt{color:var(--tx-mid)}
-.rule{width:40px;height:3px;border-radius:2px;margin:14px 0 38px;background:linear-gradient(90deg,var(--teal),var(--gold-vv))}
+.rule{width:40px;height:3px;border-radius:2px;margin:8px 0 18px;background:linear-gradient(90deg,var(--teal),var(--gold-vv))}
 
 /* ═══════════════════════════════════════════
    EXPERTISE — horizontal scroll
@@ -540,15 +540,15 @@ section{padding:84px 0}
 .ci-lbl{font-size:.59rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:4px}
 .ci-val{font-size:.94rem;color:#fff}
 .ci-val a{color:var(--gold-lt)}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.ff{margin-bottom:14px;position:relative}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ff{margin-bottom:8px;position:relative}
 .ff label{display:block;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#a9c0d8;margin-bottom:7px}
 .ff label .opt{font-weight:400;opacity:.65;text-transform:none;letter-spacing:0;font-size:.85em}
 .ff input,.ff select,.ff textarea{
   width:100%;background:rgba(255,255,255,.07);
   border:1.5px solid rgba(200,168,75,.22);border-radius:8px;
   color:#fff;font-family:'Inter','DM Sans',sans-serif;font-size:.93rem;
-  padding:11px 14px;outline:none;transition:border-color .2s,box-shadow .2s,background .2s;
+  padding:8px 10px;outline:none;transition:border-color .2s,box-shadow .2s,background .2s;
 }
 .ff input::placeholder,.ff textarea::placeholder{color:rgba(255,255,255,.35)}
 .ff select{color:rgba(255,255,255,.9)}
@@ -564,7 +564,7 @@ section{padding:84px 0}
 }
 .ff .err{display:none;margin-top:5px;font-size:.72rem;color:#ffb3b3;font-weight:500}
 .ff .err.show{display:block}
-.ff textarea{min-height:78px;resize:vertical}
+.ff textarea{min-height:52px;resize:vertical}
 /* section divider label in form */
 .form-section-lbl{
   font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
@@ -608,9 +608,8 @@ footer{
 .reveal.in{opacity:1;transform:none}
 
 /* ═══════════════════════════════════════════
-   RESPONSIVE
+   MOBILE PHOTO STRIP
 ═══════════════════════════════════════════ */
-/* Mobile hero photo strip */
 .mobile-hero-photo{
   display:none;
   width:100%;
@@ -620,20 +619,20 @@ footer{
 }
 .mobile-hero-photo img{
   width:100%;
-  max-height:72vw;
+  max-height:75vw;
   object-fit:cover;
   object-position:top center;
   display:block;
 }
 .mobile-hero-photo .photo-cred-bar{
-  position:absolute;bottom:0;left:0;right:0;
-  background:rgba(22,32,64,.88);backdrop-filter:blur(10px);
-  padding:8px 14px;
-  display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+  position:relative;
+  background:rgba(22,32,64,.92);
+  padding:10px 16px;
+  display:flex;gap:8px;align-items:center;flex-wrap:wrap;
 }
 .mobile-book-btn{
   display:none;
-  margin:0 20px 28px;
+  padding:0 20px 8px;
 }
 .mobile-book-btn a{
   display:block;width:100%;text-align:center;
@@ -641,9 +640,7 @@ footer{
   padding:14px 24px;border-radius:8px;
   font-family:'DM Sans',sans-serif;font-size:.92rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   box-shadow:0 4px 18px rgba(14,116,144,.35);
-  transition:background .2s;
 }
-.mobile-book-btn a:hover{background:var(--teal-lt)}
 
 /* WhatsApp popup */
 .wa-popup-overlay{
@@ -673,27 +670,53 @@ footer{
   padding:15px 24px;border-radius:10px;border:none;
   font-size:1rem;font-weight:700;cursor:pointer;
   box-shadow:0 4px 20px rgba(34,197,94,.4);
-  transition:background .2s;margin-bottom:10px;
+  margin-bottom:10px;
 }
-.wa-popup-btn:hover{background:#16a34a}
 .wa-popup-cancel{
   font-size:.8rem;color:#9ca3af;cursor:pointer;
   background:none;border:none;padding:6px;
 }
-.wa-popup-cancel:hover{color:#374151}
 
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
 @media(max-width:980px){
-  .hero{grid-template-columns:1fr;min-height:auto!important;}
+  /* Hero: flex column on mobile so photo appears first */
+  .hero{
+    display:flex;
+    flex-direction:column;
+    min-height:0!important;
+    padding-bottom:0!important;
+    padding-left:0!important;
+    padding-right:0!important;
+  }
+  .hero-blob1,.hero-blob2,.hero-blob3{display:none}
   .hero-right{display:none}
-  .hero-text{padding:28px 20px 20px}
+  /* Tight padding — just enough below nav */
+  .hero-text{padding:16px 16px 12px;order:3}
+  .mobile-hero-photo{order:1}
+  .mobile-book-btn{order:2}
   .mobile-hero-photo{display:block}
   .mobile-book-btn{display:block}
   .journey-grid,.contact-grid,.research-split{grid-template-columns:1fr}
-  .form-row{grid-template-columns:1fr}
-  .contact-grid{gap:36px}
+  .form-row{grid-template-columns:1fr;gap:6px}
+  .contact-grid{gap:16px}
   nav{padding:0 16px;gap:6px}
-  .wrap{padding:0 20px}
-  section{padding:62px 0}
+  .wrap{padding:0 16px}
+  section{padding:44px 0}
+  /* Contact section mobile overrides */
+  #contact{padding:28px 0 24px}
+  #contact .sec-title{font-size:1.5rem;margin-bottom:4px}
+  #contact .sec-lbl{margin-bottom:4px}
+  #contact .rule{margin:6px 0 12px}
+  #contact .ff{margin-bottom:6px}
+  #contact .ff label{font-size:.6rem;margin-bottom:3px}
+  #contact .ff input,#contact .ff select,#contact .ff textarea{padding:7px 9px;font-size:.82rem}
+  #contact .ff textarea{min-height:44px}
+  #contact .btn-wa{padding:12px 18px;font-size:.82rem}
+  #contact .f-nmc{font-size:.62rem;margin-top:6px}
+  /* Hide desktop info card on mobile */
+  #contact .contact-grid > div:last-child{display:none}
 }
 </style>
 </head>
@@ -704,7 +727,8 @@ footer{
 <nav>
   <div class="nav-brand">
     <span class="nav-brand-name">Dr. Dillip Kumar Muduly</span>
-    <span class="nav-brand-sub">Surgical Oncologist · Bhubaneswar</span>
+    <span class="nav-brand-sub">Surgical Oncologist . Bhubaneswar</span>
+	<span class="nav-brand-sub">Mob: +91-9013072969</span>
   </div>
   <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">☰</button>
   <ul class="nav-links">
@@ -730,10 +754,21 @@ footer{
   <div class="hero-blob2"></div>
   <div class="hero-blob3"></div>
 
+  <!-- MOBILE ONLY: photo above text -->
+  <div class="mobile-hero-photo" id="mobile-hero-photo-strip">
+    <img
+      src="assets/gallery/hero_image.jpg"
+      alt="Dr. Dillip Kumar Muduly — Senior Consultant, Surgical Oncology"
+      onerror="this.style.display='none'"
+    >
+
+  </div>
+  <div class="mobile-book-btn">
+    <a href="#contact">📅 Book Appointment</a>
+  </div>
+
   <!-- LEFT: text -->
   <div class="hero-text">
-    <div class="hero-eyebrow">Surgical Oncologist · Bhubaneswar, Odisha</div>
-
     <h1>Dr. Dillip Kumar<br><em>Muduly</em></h1>
 
     <div class="hero-desig">Senior Consultant, Surgical Oncology · Utkal Hospital, Bhubaneswar</div>
@@ -809,25 +844,6 @@ footer{
 
   </div>
 </section>
-
-<!-- ════════════════ MOBILE HERO PHOTO (shown only on mobile) ════════════════ -->
-<div class="mobile-hero-photo" id="mobile-hero-photo-strip">
-  <img
-    src="assets/gallery/hero_image.jpg"
-    alt="Dr. Dillip Kumar Muduly — Senior Consultant, Surgical Oncology"
-    onerror="this.style.display='none'"
-  >
-  <div class="photo-cred-bar">
-    <span class="pc">Dr (Prof) Dillip K Muduly</span><span class="pc-dot"></span>
-    <span class="pc">MS (General Surgery), AIIMS New Delhi</span>
-    <span class="pc">MCh Surgical Oncology, AIIMS New Delhi</span><span class="pc-dot"></span>
-    <span class="pc">Fellow of American College of Surgeons (FACS)</span><span class="pc-dot"></span>
-    <span class="pc">Fellow of International Union for Cancer Control (FUICC)</span>
-  </div>
-</div>
-<div class="mobile-book-btn">
-  <a href="#contact">📅 Book Appointment</a>
-</div>
 
 <!-- ════════════════ EXPERTISE ════════════════ -->
 <section id="expertise" class="sec-expertise">
@@ -1039,17 +1055,15 @@ footer{
     <h2 class="sec-title lt">Request an Appointment</h2>
     <div class="rule"></div>
     <div class="contact-grid">
-      <!-- Left col: only form now (address/phone block removed per instructions) -->
       <div>
         <!-- Reassurance intro -->
-        <div style="margin-bottom:20px;padding:14px 18px;background:rgba(14,116,144,.12);border-left:3px solid var(--teal);border-radius:0 8px 8px 0;">
-          <p style="font-size:.92rem;color:var(--tx-body);line-height:1.65;">Share your details and preferred schedule. Our team will contact you to confirm the appointment.<br><span style="font-size:.8rem;opacity:.75;">Scheduling only — not for emergency or urgent medical advice.</span></p>
+        <div style="margin-bottom:10px;padding:8px 12px;background:rgba(14,116,144,.12);border-left:3px solid var(--teal);border-radius:0 8px 8px 0;">
+          <p style="font-size:.82rem;color:var(--tx-body);line-height:1.4;">Share your details and preferred schedule. Our team will contact you to confirm the appointment.<br><span style="font-size:.8rem;opacity:.75;">Scheduling only — not for emergency or urgent medical advice.</span></p>
         </div>
 
-        <!-- SECTION 1: Essential fields — soft pink background -->
-        <div style="background:#fce4ec;border-radius:12px;padding:20px 20px 16px;margin-bottom:16px;border:1px solid rgba(194,69,94,.15);">
-          <div style="font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#c2455e;margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid rgba(194,69,94,.2);">Essential</div>
-
+        <!-- SECTION 1: Essential — soft pink -->
+        <div style="background:#fce4ec;border-radius:10px;padding:12px 14px 10px;margin-bottom:10px;border:1px solid rgba(194,69,94,.15);">
+          <div style="font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#c2455e;margin-bottom:8px;padding-bottom:4px;border-bottom:1px solid rgba(194,69,94,.2);">Essential</div>
           <div class="form-row">
             <div class="ff">
               <label for="f-name" style="color:#7b2d3e;">Full Name *</label>
@@ -1062,7 +1076,6 @@ footer{
               <div class="err" id="err-phone">Please enter a valid mobile number.</div>
             </div>
           </div>
-
           <div class="ff">
             <label for="f-reason" style="color:#7b2d3e;">Reason for Consultation *</label>
             <select id="f-reason" style="background:rgba(255,255,255,.9);border-color:rgba(194,69,94,.3);color:#1f2937;">
@@ -1085,10 +1098,9 @@ footer{
           </div>
         </div>
 
-        <!-- SECTION 2: Additional fields — soft blue-green background -->
-        <div style="background:#e8f4f8;border-radius:12px;padding:20px 20px 16px;margin-bottom:16px;border:1px solid rgba(14,116,144,.15);">
-          <div style="font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid rgba(14,116,144,.2);">Additional Details <span style="font-weight:400;opacity:.65;text-transform:none;letter-spacing:0;font-size:.9em;">(optional — helps us prepare)</span></div>
-
+        <!-- SECTION 2: Additional — soft blue-green -->
+        <div style="background:#e8f4f8;border-radius:10px;padding:12px 14px 10px;margin-bottom:10px;border:1px solid rgba(14,116,144,.15);">
+          <div style="font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;padding-bottom:4px;border-bottom:1px solid rgba(14,116,144,.2);">Additional Details <span style="font-weight:400;opacity:.65;text-transform:none;letter-spacing:0;font-size:.9em;">(optional — helps us prepare)</span></div>
           <div class="form-row">
             <div class="ff">
               <label for="f-age" style="color:#0e5a6e;">Age <span class="opt">(optional)</span></label>
@@ -1108,7 +1120,6 @@ footer{
               </select>
             </div>
           </div>
-
           <div class="form-row">
             <div class="ff">
               <label for="f-date" style="color:#0e5a6e;">Preferred Date <span class="opt">(optional)</span></label>
@@ -1125,7 +1136,6 @@ footer{
               </select>
             </div>
           </div>
-
           <div class="ff">
             <label for="f-msg" style="color:#0e5a6e;">Brief Message <span class="opt">(optional)</span></label>
             <textarea id="f-msg" rows="3" placeholder="Symptoms, diagnosis, reports available, or any specific question" style="background:rgba(255,255,255,.85);border-color:rgba(14,116,144,.25);color:#1f2937;"></textarea>
@@ -1137,21 +1147,9 @@ footer{
           Request via WhatsApp
         </button>
         <p class="f-nmc" style="color:#5a6a7e;">⚖️ On submission, this request will open in WhatsApp for you to send to the clinic. Scheduling only — not a medical consultation. NMC Compliant.</p>
+      </div>
 
-      </div>
-      <!-- Right col intentionally left for layout balance on desktop; empty on mobile -->
-      <div style="display:flex;align-items:center;justify-content:center;">
-        <div style="background:rgba(14,116,144,.07);border:1px solid rgba(14,116,144,.15);border-radius:16px;padding:32px 24px;text-align:center;">
-          <div style="font-size:3rem;margin-bottom:12px;">🏥</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--tx-dark);margin-bottom:8px;">Utkal Hospital</div>
-          <div style="font-size:.9rem;color:var(--tx-mid);margin-bottom:20px;">Bhubaneswar, Odisha</div>
-          <div style="font-size:.82rem;color:var(--tx-body);line-height:2;">
-            <div>📅 Fill form &amp; send via WhatsApp</div>
-            <div>⏱ Response within working hours</div>
-            <div>🩺 Not for emergencies</div>
-          </div>
-        </div>
-      </div>
+      <!-- Right info card (desktop only) -->
     </div>
   </div>
 </section>
@@ -1393,19 +1391,26 @@ function sendWhatsApp(){
 
   const url = 'https://wa.me/' + wa + '?text=' + encodeURIComponent(lines);
 
-  // Show popup, wire open button
+  // Show confirmation popup
   const waPopup = document.getElementById('wa-popup-overlay');
-  const waPopupBtn = document.getElementById('wa-popup-open-btn');
+  const waPopupBtnEl = document.getElementById('wa-popup-open-btn');
   if(btn){ btn.classList.remove('sending'); btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Request via WhatsApp'; }
   waPopup.classList.add('open');
-  // Remove previous listeners by cloning
-  const newBtn = waPopupBtn.cloneNode(true);
-  waPopupBtn.parentNode.replaceChild(newBtn, waPopupBtn);
-  newBtn.addEventListener('click', function(){
+  const newPopupBtn = waPopupBtnEl.cloneNode(true);
+  waPopupBtnEl.parentNode.replaceChild(newPopupBtn, waPopupBtnEl);
+  newPopupBtn.addEventListener('click', function(){
     waPopup.classList.remove('open');
     window.open(url,'_blank');
   });
   waPopup.onclick = function(e){ if(e.target === waPopup) waPopup.classList.remove('open'); };
+}
+
+/* dummy to replace old setTimeout — already handled above */
+function _noop(){
+  setTimeout(()=>{
+    window.open('','_blank');
+    if(btn){ btn.classList.remove('sending'); btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Request via WhatsApp'; }
+  }, 600);
 }
 
 /* ── INIT ── */
@@ -1417,22 +1422,19 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(hdr){
       const h = hdr.offsetHeight;
       const hero = document.querySelector('.hero');
-      if(hero){ hero.style.paddingTop = h + 'px'; hero.style.minHeight = '100vh'; }
+      if(hero){
+        hero.style.paddingTop = h + 'px';
+        // On desktop keep full viewport height; on mobile let content determine height
+        if(window.innerWidth > 980){
+          hero.style.minHeight = '100vh';
+        } else {
+          hero.style.minHeight = '0';
+        }
+      }
     }
   }
   setHeroOffset();
   window.addEventListener('resize', setHeroOffset);
-
-  // Mobile hero photo strip — place it right after the fixed header
-  function setMobilePhotoOffset(){
-    const hdr = document.getElementById('site-header');
-    const strip = document.getElementById('mobile-hero-photo-strip');
-    if(hdr && strip && window.innerWidth <= 980){
-      strip.style.marginTop = '0px';
-    }
-  }
-  setMobilePhotoOffset();
-  window.addEventListener('resize', setMobilePhotoOffset);
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeVlb();closeGlb();}});
 </script>
