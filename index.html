@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Dr. Dillip Kumar Muduly | Senior Consultant Surgical Oncology | Bhubaneswar</title>
+<title>Dr. Dillip Kumar Muduly | Senior Consultant Surgical Oncologist | Bhubaneswar</title>
 <meta name="description" content="Dr. Dillip Kumar Muduly – Senior Consultant, Surgical Oncology, Utkal Hospital, Bhubaneswar. Formerly Professor & Head, AIIMS Bhubaneswar. 23+ years expertise."/>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1VWYQV5NQ"></script>
@@ -88,6 +88,21 @@ nav{
 .nav-brand{display:flex;flex-direction:column;gap:3px;margin-right:auto;padding:14px 0}
 .nav-brand-name{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;color:#fff;line-height:1;letter-spacing:-.01em}
 .nav-brand-sub{font-size:.62rem;font-weight:700;color:var(--gold-lt);letter-spacing:.2em;text-transform:uppercase}
+.nav-brand-phone{font-size:.68rem;font-weight:600;color:rgba(255,255,255,.75);letter-spacing:.04em;cursor:pointer;display:inline-flex;align-items:center;gap:5px;margin-top:1px}
+.nav-brand-phone:hover{color:#fff}
+/* Phone action popup */
+.phone-popup-overlay{display:none;position:fixed;inset:0;z-index:10001;background:rgba(22,32,64,.65);backdrop-filter:blur(5px);align-items:flex-end;justify-content:center;padding-bottom:32px}
+.phone-popup-overlay.open{display:flex}
+.phone-popup-box{background:#fff;border-radius:20px;padding:24px 20px 16px;width:100%;max-width:380px;text-align:center;animation:slideUp .25s ease}
+@keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+.phone-popup-num{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.phone-popup-lbl{font-size:.75rem;color:var(--tx-mid);margin-bottom:18px}
+.phone-popup-actions{display:flex;gap:10px}
+.phone-popup-btn{flex:1;padding:13px 10px;border-radius:12px;border:none;font-size:.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:opacity .15s}
+.phone-popup-btn:hover{opacity:.88}
+.phone-popup-call{background:#22c55e;color:#fff}
+.phone-popup-save{background:var(--ink);color:#fff}
+.phone-popup-cancel{display:block;width:100%;margin-top:10px;padding:10px;border:none;background:none;font-size:.82rem;color:var(--tx-mid);cursor:pointer}
 .nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:2px;list-style:none;padding:10px 0}
 .nav-links a{font-size:.76rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--dk-dim);padding:7px 10px;border-radius:4px;transition:color .2s,background .2s}
 .nav-links a:hover{color:var(--gold-lt)}
@@ -534,7 +549,7 @@ section{padding:84px 0}
 /* ═══════════════════════════════════════════
    CONTACT
 ═══════════════════════════════════════════ */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:52px}
 .ci{display:flex;gap:12px;margin-bottom:22px;align-items:flex-start}
 .ci-ico{font-size:1.1rem;margin-top:2px;flex-shrink:0}
 .ci-lbl{font-size:.59rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:4px}
@@ -716,7 +731,7 @@ footer{
   #contact .btn-wa{padding:12px 18px;font-size:.82rem}
   #contact .f-nmc{font-size:.62rem;margin-top:6px}
   /* Hide desktop info card on mobile */
-  #contact .contact-grid > div:last-child{display:none}
+  /* contact grid is single column, no last-child to hide */
 }
 </style>
 </head>
@@ -727,8 +742,8 @@ footer{
 <nav>
   <div class="nav-brand">
     <span class="nav-brand-name">Dr. Dillip Kumar Muduly</span>
-    <span class="nav-brand-sub">Surgical Oncologist . Bhubaneswar</span>
-	<span class="nav-brand-sub">Mob: +91-9013072969</span>
+    <span class="nav-brand-sub">Surgical Oncologist · Bhubaneswar</span>
+    <span class="nav-brand-phone" onclick="document.getElementById('phone-popup').classList.add('open')">📞 +91-9013072969</span>
   </div>
   <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">☰</button>
   <ul class="nav-links">
@@ -761,7 +776,6 @@ footer{
       alt="Dr. Dillip Kumar Muduly — Senior Consultant, Surgical Oncology"
       onerror="this.style.display='none'"
     >
-
   </div>
   <div class="mobile-book-btn">
     <a href="#contact">📅 Book Appointment</a>
@@ -769,6 +783,7 @@ footer{
 
   <!-- LEFT: text -->
   <div class="hero-text">
+    
     <h1>Dr. Dillip Kumar<br><em>Muduly</em></h1>
 
     <div class="hero-desig">Senior Consultant, Surgical Oncology · Utkal Hospital, Bhubaneswar</div>
@@ -1148,8 +1163,6 @@ footer{
         </button>
         <p class="f-nmc" style="color:#5a6a7e;">⚖️ On submission, this request will open in WhatsApp for you to send to the clinic. Scheduling only — not a medical consultation. NMC Compliant.</p>
       </div>
-
-      <!-- Right info card (desktop only) -->
     </div>
   </div>
 </section>
@@ -1438,5 +1451,24 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeVlb();closeGlb();}});
 </script>
+<!-- PHONE ACTION POPUP -->
+<div class="phone-popup-overlay" id="phone-popup" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="phone-popup-box">
+    <div class="phone-popup-num">+91-9013072969</div>
+    <div class="phone-popup-lbl">Dr. Dillip Kumar Muduly · Surgical Oncologist</div>
+    <div class="phone-popup-actions">
+      <a href="tel:+919013072969" class="phone-popup-btn phone-popup-call">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+        Call Now
+      </a>
+      <a href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Dr.%20Dillip%20Kumar%20Muduly%0AORG:Utkal%20Hospital%2C%20Bhubaneswar%0ATEL:+919013072969%0AEMAIL:%0AURL:https%3A%2F%2Fdrdillipmuduly.co.in%0AEND:VCARD" download="Dr_Dillip_Muduly.vcf" class="phone-popup-btn phone-popup-save">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+        Add to Contacts
+      </a>
+    </div>
+    <button class="phone-popup-cancel" onclick="document.getElementById('phone-popup').classList.remove('open')">Cancel</button>
+  </div>
+</div>
+
 </body>
 </html>
